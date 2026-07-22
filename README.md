@@ -14,6 +14,6 @@ MVP:
 Commercial path:
 
 - Free planner.
-- $49 24-hour tribute video starter.
-- $99+ expanded tribute video.
+- $49 24-hour tribute video starter: https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S
+- $99 expanded tribute video: https://www.paypal.com/ncp/payment/84K489BK7ZMLL
 - Human final review required for names, dates, photo order, tone, and music rights.

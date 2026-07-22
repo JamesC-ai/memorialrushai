@@ -7,6 +7,8 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /MemorialRushAI/);
   assert.match(html, /Generate tribute brief/);
   assert.match(html, /Email order pack/);
+  assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/4L3HUKYKN6C8S/);
+  assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/84K489BK7ZMLL/);
   assert.match(html, /Privacy: use secure transfer only/);
 });
 
@@ -14,6 +16,8 @@ test("ships browser-local tribute generator", async () => {
   const script = await readFile(new URL("../dist/app.js", import.meta.url), "utf8");
   assert.match(script, /function generate/);
   assert.match(script, /MemorialRushAI rush order request/);
+  assert.match(script, /4L3HUKYKN6C8S/);
+  assert.match(script, /84K489BK7ZMLL/);
   assert.match(script, /Delete working files after delivery and approval/);
   assert.doesNotMatch(script, /fetch\(/);
 });

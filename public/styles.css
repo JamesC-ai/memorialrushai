@@ -201,6 +201,13 @@ button {
   padding: 18px;
 }
 
+.offer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
 .grid {
   display: grid;
   gap: 18px;

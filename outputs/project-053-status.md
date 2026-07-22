@@ -1,6 +1,6 @@
 # Project 053: MemorialRushAI
 
-状态：MVP 已部署，Cloudflare 自定义域名后台 active，外部 HTTPS 仍在传播，待接入 PayPal
+状态：MVP 已部署，Cloudflare 自定义域名后台 active，外部 HTTPS 仍在传播，PayPal 已接入
 
 建议正式站点：
 
@@ -38,10 +38,10 @@ MemorialRushAI 是隐私优先的 24 小时追思/葬礼纪念视频订单入口
 - Privacy、Terms、Support 页面
 - 5 个英文长尾 SEO 页面
 
-## 仍需要用户提供
+## 收款
 
-- PayPal no-code payment link，建议产品名：`MemorialRushAI 24-Hour Tribute Video Starter`，价格：`$49 USD`。
-- 可选升级款：`MemorialRushAI Expanded Tribute Video`，价格：`$99 USD`。
+- Starter：`$49 USD`，https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S
+- Expanded：`$99 USD`，https://www.paypal.com/ncp/payment/84K489BK7ZMLL
 
 ## 安全边界
 

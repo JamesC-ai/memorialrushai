@@ -7,7 +7,6 @@ const fields = {
   lifeDates: document.querySelector("#lifeDates"),
   lifeNotes: document.querySelector("#lifeNotes"),
   musicPreference: document.querySelector("#musicPreference"),
-  paymentLink: document.querySelector("#paymentLink"),
   personName: document.querySelector("#personName"),
   photoCount: document.querySelector("#photoCount"),
   relationship: document.querySelector("#relationship"),
@@ -40,6 +39,11 @@ function values() {
     videoLength: fields.videoLength.value,
   };
 }
+
+const paymentLinks = {
+  starter: "https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S",
+  expanded: "https://www.paypal.com/ncp/payment/84K489BK7ZMLL",
+};
 
 function chapterCount(photoCount) {
   if (photoCount >= 80) return 5;
@@ -110,6 +114,9 @@ Video length: ${v.videoLength}
 Tone: ${v.tone}
 Photo count: ${v.photoCount}
 Music preference: ${v.musicPreference}
+Payment:
+- $49 starter: ${paymentLinks.starter}
+- $99 expanded: ${paymentLinks.expanded}
 
 Intake summary:
 ${fields.summaryOutput.textContent}
