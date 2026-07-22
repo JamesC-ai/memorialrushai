@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MemorialRushAI - 24-hour tribute video planning</title>
+    <meta
+      name="description"
+      content="Create a private intake checklist, tribute script, caption plan, and editor brief for a respectful rush memorial video."
+    />
+    <meta property="og:title" content="MemorialRushAI" />
+    <meta property="og:description" content="A privacy-first rush memorial video intake and tribute planning tool." />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">MemorialRushAI</p>
+          <h1>Prepare a respectful memorial video brief in minutes.</h1>
+          <p>
+            Build a private intake summary, tribute script, caption plan, and editor handoff for a 24-hour funeral or
+            online memorial video.
+          </p>
+          <div class="button-row">
+            <a class="primary" href="#planner">Create brief</a>
+            <a class="secondary" href="/support.html">Support</a>
+          </div>
+        </div>
+        <div class="visual-panel" aria-label="Memorial video storyboard preview">
+          <div class="frame frame-large">
+            <span></span>
+            <strong>Opening title</strong>
+          </div>
+          <div class="film-row">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="caption-card">
+            <p>Chapter 2</p>
+            <strong>Family, work, kindness, favorite places.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer-strip" aria-label="Rush tribute service">
+        <div>
+          <p class="eyebrow">24-hour starter</p>
+          <h2>$49 rush tribute planning pack.</h2>
+          <p>Use this free planner first. PayPal checkout will be connected once the payment link is ready.</p>
+        </div>
+        <a class="secondary" id="paymentLink" href="mailto:support@pagecheckai.com?subject=MemorialRushAI%20rush%20order">
+          Request rush order
+        </a>
+      </section>
+
+      <section class="grid" id="planner">
+        <form class="panel controls" id="tributeForm">
+          <label>
+            Contact email
+            <input id="contactEmail" type="email" value="family@example.com" />
+          </label>
+          <label>
+            Honored person's name
+            <input id="personName" value="Margaret Lee" />
+          </label>
+          <label>
+            Dates or years
+            <input id="lifeDates" value="1948-2026" />
+          </label>
+          <label>
+            Relationship / audience
+            <input id="relationship" value="mother, grandmother, and lifelong teacher" />
+          </label>
+          <label>
+            Service time
+            <input id="serviceTime" type="datetime-local" value="2026-07-23T14:00" />
+          </label>
+          <label>
+            Video length
+            <select id="videoLength">
+              <option value="3-4 minutes">3-4 minutes</option>
+              <option value="5-7 minutes">5-7 minutes</option>
+              <option value="8-10 minutes">8-10 minutes</option>
+            </select>
+          </label>
+          <label>
+            Tone
+            <select id="tone">
+              <option value="warm and calm">Warm and calm</option>
+              <option value="faith-centered">Faith-centered</option>
+              <option value="celebration of life">Celebration of life</option>
+              <option value="quiet and minimal">Quiet and minimal</option>
+            </select>
+          </label>
+          <label>
+            Photo count
+            <input id="photoCount" type="number" min="5" max="160" value="45" />
+          </label>
+          <label>
+            Music preference
+            <input id="musicPreference" value="soft piano, no lyrics" />
+          </label>
+          <label>
+            Life notes
+            <textarea id="lifeNotes" rows="8">Born in Oregon, taught elementary school for 35 years, loved gardening, Sunday dinners, beach trips, and reading to her grandchildren. Please include a closing thank-you from the family.</textarea>
+          </label>
+          <button class="primary" type="submit">Generate tribute brief</button>
+        </form>
+
+        <section class="panel output" aria-live="polite">
+          <div class="output-head">
+            <div>
+              <p class="eyebrow">Generated pack</p>
+              <h2>Tribute video brief</h2>
+            </div>
+            <div class="button-row">
+              <button id="copyAll" type="button">Copy</button>
+              <button id="emailOrder" type="button">Email order pack</button>
+            </div>
+          </div>
+          <article>
+            <h3>Intake summary</h3>
+            <pre id="summaryOutput"></pre>
+          </article>
+          <article>
+            <h3>Scene plan</h3>
+            <pre id="sceneOutput"></pre>
+          </article>
+          <article>
+            <h3>Caption draft</h3>
+            <pre id="captionOutput"></pre>
+          </article>
+          <article>
+            <h3>Editor handoff</h3>
+            <pre id="handoffOutput"></pre>
+          </article>
+          <div class="fineprint">
+            <span>Privacy: use secure transfer only. Delete source files after delivery and approval.</span>
+            <span><a href="/privacy.html">Privacy</a> <a href="/terms.html">Terms</a> <a href="/support.html">Support</a></span>
+          </div>
+        </section>
+      </section>
+
+      <section class="ops-strip" aria-label="MemorialRushAI workflow">
+        <article>
+          <span class="offer-pill">Private</span>
+          <h3>Structured intake</h3>
+          <p>Capture names, dates, tone, music, service timing, and photo count before any editing work starts.</p>
+        </article>
+        <article>
+          <span class="offer-pill">Fast</span>
+          <h3>24-hour brief</h3>
+          <p>Turn scattered memories into a practical scene order, captions, and editor-ready production notes.</p>
+        </article>
+        <article>
+          <span class="offer-pill">Human checked</span>
+          <h3>Final review</h3>
+          <p>Names, dates, photo order, music permission, and emotional tone should be checked by a person.</p>
+        </article>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
