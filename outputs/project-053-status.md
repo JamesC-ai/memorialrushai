@@ -1,14 +1,25 @@
 # Project 053: MemorialRushAI
 
-状态：MVP 已实现，待部署和接入 PayPal
+状态：MVP 已部署，Cloudflare 自定义域名后台 active，外部 HTTPS 仍在传播，待接入 PayPal
 
 建议正式站点：
 
 - https://memorial.pagecheckai.com
 
+当前可访问站点：
+
+- https://memorialrushai.pages.dev
+
 代码仓库：
 
 - https://github.com/JamesC-ai/memorialrushai
+
+Cloudflare Pages：
+
+- Project: `memorialrushai`
+- Custom domain: `memorial.pagecheckai.com`
+- DNS: `memorial.pagecheckai.com CNAME memorialrushai.pages.dev DNS only`
+- Pages 主域已通过 HTTP 验证；正式域名如短时间 HTTPS 握手失败，先用 Pages 主域承接访问。
 
 ## 产品
 
