@@ -153,6 +153,151 @@ const pages = [
       ["What privacy note should I include?", "Ask the editor to delete working files after delivery and approval unless the family requests otherwise."],
     ],
   },
+  {
+    slug: "memorial-photo-organization-checklist",
+    title: "Memorial photo organization checklist",
+    description:
+      "Organize memorial photos into a respectful sequence before sending them to a tribute video editor.",
+    headline: "Organize memorial photos before the rush deadline.",
+    audience: "families and helpers sorting decades of photos into a clear tribute video order",
+    checklist: ["Must-use photos", "Photo chapter groups", "Caption notes", "Do-not-use items"],
+    steps: ["Create a minimum photo set.", "Group by life chapter.", "Mark sensitive or duplicate images.", "Send the clean order pack."],
+    rushReadiness: [
+      "Start with a smaller must-use folder so production can begin even if extra photos arrive later.",
+      "Use chapter folders such as childhood, family, work, hobbies, friends, and closing memories.",
+      "Keep filename order simple so the editor can follow the family sequence without guessing.",
+    ],
+    familyReview: [
+      "Ask one reviewer to confirm the photo order and relationship labels.",
+      "Flag photos that should be cropped, shown briefly, or excluded.",
+      "Check whether any person in a photo may not belong in a public service slideshow.",
+    ],
+    privacyNotes: [
+      "Use private folders with limited access for source photos.",
+      "Avoid posting source photo folders publicly while collecting contributions.",
+      "Ask the editor to delete unused and working files after approval.",
+    ],
+    faq: [
+      ["How many photos should I choose first?", "Choose the smallest set that can tell the story, then add optional photos only if time allows."],
+      ["Should captions be written for every photo?", "No. Short chapter notes are often enough unless a specific photo needs context."],
+    ],
+  },
+  {
+    slug: "celebration-of-life-slideshow-plan",
+    title: "Celebration of life slideshow plan",
+    description:
+      "Plan a celebration of life slideshow with warm chapter order, caption tone, music notes, and editor handoff details.",
+    headline: "Plan a celebration of life slideshow with calm structure.",
+    audience: "families preparing a warmer tribute focused on memories, gratitude, and shared stories",
+    checklist: ["Opening title", "Memory chapters", "Music preference", "Closing thank-you"],
+    steps: ["Choose the tribute tone.", "List the story chapters.", "Add music and runtime notes.", "Review the final dedication."],
+    rushReadiness: [
+      "Decide whether the slideshow should feel quiet, warm, humorous, faith-centered, or documentary.",
+      "Keep the chapter order simple so the video can be assembled quickly.",
+      "Confirm playback format, venue screen, and final delivery deadline before payment.",
+    ],
+    familyReview: [
+      "Read all visible text aloud before sending the order pack.",
+      "Confirm whether family sayings, cultural traditions, faith language, or military service should be included.",
+      "Make sure the closing message feels like the family's voice.",
+    ],
+    privacyNotes: [
+      "Separate public captions from private editor notes.",
+      "Avoid private family conflict, health details, and addresses in visible text.",
+      "Review the final video privately before sharing with a wider group.",
+    ],
+    faq: [
+      ["Is this different from a funeral slideshow?", "The structure can be similar, but the tone often focuses more on celebration, memories, and gratitude."],
+      ["Can it include humor?", "Yes, if the family agrees and the editor understands which moments are appropriate."],
+    ],
+  },
+  {
+    slug: "online-memorial-video-planner",
+    title: "Online memorial video planner",
+    description:
+      "Prepare an online memorial video brief for livestreams, private links, remote family review, and secure delivery.",
+    headline: "Plan an online memorial video for remote family and friends.",
+    audience: "families sharing a tribute through livestreams, private video links, or remote memorial pages",
+    checklist: ["Private review link", "Remote attendee needs", "Caption readability", "Download or livestream format"],
+    steps: ["Confirm where the video will be shown.", "Plan title cards and captions for online viewing.", "Choose a secure review path.", "Send the final editor brief."],
+    rushReadiness: [
+      "Confirm whether the final video is for livestream playback, a download link, a private memorial page, or social sharing.",
+      "Use larger, shorter captions so remote viewers can read them on phones.",
+      "Prepare backup delivery options before the service time.",
+    ],
+    familyReview: [
+      "Send the private review link only to the decision owner and backup contact.",
+      "Ask remote family to check names and dates before the final render deadline.",
+      "Confirm whether the final link should be downloadable or view-only.",
+    ],
+    privacyNotes: [
+      "Avoid public links until the family approves the video.",
+      "Use expiring review links when possible.",
+      "Remove editor and reviewer access after delivery.",
+    ],
+    faq: [
+      ["Can this help with livestream playback?", "Yes. Include livestream format, deadline, and backup contact details in the handoff."],
+      ["Should the link be public?", "Usually no. Start private, then share more widely only after family approval."],
+    ],
+  },
+  {
+    slug: "grandparent-tribute-video-script",
+    title: "Grandparent tribute video script",
+    description:
+      "Draft gentle chapter notes and closing wording for a grandparent tribute video without losing the family's voice.",
+    headline: "Prepare a grandparent tribute video script with care.",
+    audience: "children and grandchildren writing short tribute text for photos, title cards, and closing slides",
+    checklist: ["Family role", "Favorite memories", "Legacy themes", "Closing dedication"],
+    steps: ["Add relationship and tone notes.", "Choose life chapters.", "Draft short captions.", "Review with family before production."],
+    rushReadiness: [
+      "Keep visible text short so photos remain the focus.",
+      "Group memories by family, work, traditions, hobbies, and closing gratitude.",
+      "Send optional stories as editor notes instead of forcing every memory into captions.",
+    ],
+    familyReview: [
+      "Ask relatives to confirm names, relationships, and phrases the family commonly uses.",
+      "Check that wording feels warm but not overly generic.",
+      "Confirm whether grandchildren names should be shown individually or as a group.",
+    ],
+    privacyNotes: [
+      "Keep private family details out of visible captions.",
+      "Ask before using photos of children or private family gatherings in a public video.",
+      "Store drafts in a family-controlled folder.",
+    ],
+    faq: [
+      ["Can it help when I do not know what to write?", "Yes. It creates a structure you can edit into the family's own voice."],
+      ["Should every grandchild be named?", "Only if the family wants that and the spelling has been reviewed."],
+    ],
+  },
+  {
+    slug: "funeral-photo-scan-order",
+    title: "Funeral photo scan order",
+    description:
+      "Prepare scanned funeral photos for a video editor with file order, caption notes, crop warnings, and privacy instructions.",
+    headline: "Turn scanned funeral photos into an editor-ready order.",
+    audience: "families scanning albums, printed photos, service programs, and older images for a tribute slideshow",
+    checklist: ["Scan quality", "File order", "Crop warnings", "Caption and date notes"],
+    steps: ["Scan must-use photos first.", "Number files in the intended order.", "Add crop and repair notes.", "Send the organized handoff pack."],
+    rushReadiness: [
+      "Scan at a consistent quality and avoid retaking photos from a screen if a better original exists.",
+      "Number files before sending so the editor can follow the intended story quickly.",
+      "Mark damaged photos that need gentle cropping or restoration expectations.",
+    ],
+    familyReview: [
+      "Check whether older photos have correct names, dates, and locations.",
+      "Ask family before excluding meaningful but low-quality photos.",
+      "Confirm which scanned documents are for reference only and should not appear in the final video.",
+    ],
+    privacyNotes: [
+      "Avoid scanning private documents unless they are needed for the video.",
+      "Use secure transfer for scans, especially if they include children or family records.",
+      "Request deletion of unused scans after delivery and approval.",
+    ],
+    faq: [
+      ["What if scans are low quality?", "Mark them clearly. The editor can decide whether to crop, soften, or use them briefly."],
+      ["Should I send every album photo?", "No. Send a must-use set first, then optional extras if the deadline allows."],
+    ],
+  },
 ];
 
 function escapeHtml(value) {

@@ -10,6 +10,8 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/4L3HUKYKN6C8S/);
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/84K489BK7ZMLL/);
   assert.match(html, /Privacy: use secure transfer only/);
+  assert.match(html, /Photo order/);
+  assert.match(html, /Online memorial/);
 });
 
 test("ships browser-local tribute generator", async () => {
@@ -30,6 +32,11 @@ test("includes policy support and SEO discovery files", async () => {
   assert.match(robots, /Sitemap: https:\/\/memorial\.pagecheckai\.com\/sitemap\.xml/);
   assert.match(sitemap, /24-hour-memorial-video/);
   assert.match(sitemap, /privacy-first-memorial-video/);
+  assert.match(sitemap, /memorial-photo-organization-checklist/);
+  assert.match(sitemap, /celebration-of-life-slideshow-plan/);
+  assert.match(sitemap, /online-memorial-video-planner/);
+  assert.match(sitemap, /grandparent-tribute-video-script/);
+  assert.match(sitemap, /funeral-photo-scan-order/);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
 });

@@ -290,6 +290,43 @@ pre {
   padding: 16px;
 }
 
+.intent-strip {
+  align-items: start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(31, 41, 55, 0.08);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(220px, 0.55fr) 1fr;
+  padding: 16px;
+}
+
+.intent-strip h2 {
+  line-height: 1.12;
+}
+
+.intent-links {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.intent-links a {
+  align-items: center;
+  background: #edf4ee;
+  border: 1px solid #cad9cc;
+  border-radius: 8px;
+  color: #48614d;
+  display: flex;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .offer-pill {
   background: #edf4ee;
   border: 1px solid #cad9cc;
@@ -350,6 +387,8 @@ pre {
   .hero,
   .grid,
   .ops-strip,
+  .intent-strip,
+  .intent-links,
   .seo-grid {
     grid-template-columns: 1fr;
   }
