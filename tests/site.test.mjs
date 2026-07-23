@@ -33,3 +33,15 @@ test("includes policy support and SEO discovery files", async () => {
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
 });
+
+test("builds thick memorial SEO pages for rush and privacy searches", async () => {
+  const rushPage = await readFile(new URL("../dist/24-hour-memorial-video/index.html", import.meta.url), "utf8");
+  const privacyPage = await readFile(new URL("../dist/privacy-first-memorial-video/index.html", import.meta.url), "utf8");
+  assert.match(rushPage, /Rush readiness checklist/);
+  assert.match(rushPage, /Family review notes/);
+  assert.match(rushPage, /Privacy and consent checklist/);
+  assert.match(rushPage, /Editor handoff review/);
+  assert.match(rushPage, /Confirm the service deadline/);
+  assert.match(privacyPage, /expiring links, limited permissions, and deletion requests/);
+  assert.match(privacyPage, /Review the final video on a private link/);
+});

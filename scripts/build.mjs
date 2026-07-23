@@ -17,6 +17,21 @@ const pages = [
     audience: "families and coordinators who need to organize tribute details quickly before handing files to an editor",
     checklist: ["Name pronunciation and dates", "Photo chapter order", "Music and tone notes", "Captions and final message"],
     steps: ["Create the brief.", "Collect files in a secure folder.", "Review names and dates.", "Send the order pack after payment."],
+    rushReadiness: [
+      "Confirm the service deadline, timezone, venue screen format, and backup contact before editing starts.",
+      "Group photos into childhood, family, work, friends, hobbies, and closing memories so the editor can move quickly.",
+      "Keep one decision owner for final approvals to avoid conflicting last-minute changes.",
+    ],
+    familyReview: [
+      "Ask one family member to check spelling, dates, pronunciation, and relationship labels.",
+      "Flag photos that are meaningful but sensitive so the editor knows whether to include, soften, or omit them.",
+      "Confirm the closing slide wording before payment so the order pack is ready for production.",
+    ],
+    privacyNotes: [
+      "Use private transfer links with expiration dates instead of public folders.",
+      "Do not include home addresses, medical details, or private service logistics unless they belong in the final video.",
+      "Request deletion of working files after delivery and approval.",
+    ],
     faq: [
       ["Does this create the final video automatically?", "No. It prepares a clear brief and handoff pack for rush tribute video work."],
       ["Can it be used within 24 hours?", "Yes, it is designed for urgent organization, but delivery timing depends on the editor and file readiness."],
@@ -31,6 +46,21 @@ const pages = [
     audience: "families, funeral coordinators, celebrants, and friends helping prepare a service slideshow",
     checklist: ["Service date and deadline", "Photo count target", "Opening and closing slides", "Music or silence preferences"],
     steps: ["Enter service details.", "List photo groups.", "Add captions and special notes.", "Email the generated order pack."],
+    rushReadiness: [
+      "Share the exact playback deadline and whether the file is needed for a chapel screen, projector, livestream, or download link.",
+      "Prepare a minimum viable set of photos first, then add extras only if time allows.",
+      "Separate must-use photos from optional photos so the editor can protect the most important memories.",
+    ],
+    familyReview: [
+      "Review the order of immediate family, friends, military or faith moments, and closing tribute images.",
+      "Check whether any photo should be cropped, blurred, skipped, or shown only briefly.",
+      "Make one final pass for misspelled names before the slideshow is rendered.",
+    ],
+    privacyNotes: [
+      "Avoid public upload pages for family images and service documents.",
+      "Only share the folder with the editor and the family reviewer.",
+      "Ask for a written confirmation when source files are deleted after approval.",
+    ],
     faq: [
       ["Should I upload photos here?", "No. Use secure transfer only. MemorialRushAI helps organize the brief, not store photos."],
       ["What if names or dates are uncertain?", "Mark them for review before sending the final packet."],
@@ -45,6 +75,21 @@ const pages = [
     audience: "anyone coordinating family memories, captions, photos, and music notes for a tribute video",
     checklist: ["Preferred name and relationship", "Photo sequence", "Captions to include or avoid", "Sensitive items to omit"],
     steps: ["Fill the intake fields.", "Copy the generated checklist.", "Confirm details with family.", "Send a clean handoff."],
+    rushReadiness: [
+      "Collect the essentials first: name, dates, deadline, tone, music preference, and photo count.",
+      "Write short notes for each photo group instead of trying to script every second.",
+      "Mark unknown details as family review items instead of guessing under time pressure.",
+    ],
+    familyReview: [
+      "Send the checklist to the person who knows the family history best.",
+      "Confirm the tone: quiet remembrance, faith-centered, celebration of life, or warm documentary.",
+      "Keep a simple change log so the editor can see what changed after the first review.",
+    ],
+    privacyNotes: [
+      "Keep intake notes limited to details that help the tribute video.",
+      "Do not paste private contact lists, medical information, or unrelated family history into the order pack.",
+      "Use a secure folder and remove access after delivery.",
+    ],
     faq: [
       ["Can several people contribute?", "Yes. Use the generated checklist to gather missing details from family members."],
       ["Does the tool judge which photos to use?", "No. It helps organize your choices and editor notes."],
@@ -59,6 +104,21 @@ const pages = [
     audience: "families who need gentle wording for title cards, chapter breaks, and closing messages",
     checklist: ["Opening line", "Life chapters", "Caption style", "Closing dedication"],
     steps: ["Add family tone notes.", "Choose a simple chapter order.", "Draft captions.", "Review every word before production."],
+    rushReadiness: [
+      "Choose a simple three-part structure: beginning, life and family, closing gratitude.",
+      "Use short title cards so the video can move through photos without feeling crowded.",
+      "Keep optional stories in the notes field so the editor can use them only if the runtime allows.",
+    ],
+    familyReview: [
+      "Read the script out loud to catch language that feels too formal, too casual, or inaccurate.",
+      "Ask whether faith, military service, cultural traditions, or family phrases should be included.",
+      "Confirm the final dedication before rendering, because that line often matters most.",
+    ],
+    privacyNotes: [
+      "Avoid private family conflicts, health details, and addresses in visible captions.",
+      "Keep the public script separate from private editor notes.",
+      "Delete draft scripts after the family approves the final wording.",
+    ],
     faq: [
       ["Will the script sound generic?", "The planner gives structure; you should edit the wording so it feels personal and accurate."],
       ["Can I leave sections blank?", "Yes. Blank sections can be marked as editor notes or family review items."],
@@ -73,6 +133,21 @@ const pages = [
     audience: "families and helpers handling private photos, names, locations, and service details",
     checklist: ["Secure transfer method", "Photo permissions", "Do-not-use notes", "Deletion after approval"],
     steps: ["Avoid public upload links.", "Keep sensitive details minimal.", "Add deletion notes.", "Confirm the final file before sharing."],
+    rushReadiness: [
+      "Decide who may access the source folder before sending any private photos.",
+      "Separate public final-video captions from private production instructions.",
+      "Choose a delivery method that allows the family to review before wider sharing.",
+    ],
+    familyReview: [
+      "Ask whether every person shown in sensitive photos is appropriate for the memorial context.",
+      "Confirm any do-not-use photos, names, locations, or events before the editor begins.",
+      "Review the final video on a private link before posting or projecting it publicly.",
+    ],
+    privacyNotes: [
+      "Use expiring links, limited permissions, and deletion requests for all source files.",
+      "Avoid uploading original photos to public forums, comment threads, or untrusted tools.",
+      "Keep a copy of the final approved video in a family-controlled folder.",
+    ],
     faq: [
       ["Does MemorialRushAI upload photos?", "No. The browser planner does not upload photos."],
       ["What privacy note should I include?", "Ask the editor to delete working files after delivery and approval unless the family requests otherwise."],
@@ -150,6 +225,25 @@ function pageHtml(page) {
       <section class="seo-card">
         <h2>Privacy boundary</h2>
         <p>MemorialRushAI does not automatically upload family photos or service details. Use secure transfer only, review every name and date, and ask the editor to delete working files after delivery and approval.</p>
+      </section>
+
+      <section class="seo-grid" aria-label="Rush memorial video operations">
+        <article class="seo-card">
+          <h2>Rush readiness checklist</h2>
+          ${list(page.rushReadiness)}
+        </article>
+        <article class="seo-card">
+          <h2>Family review notes</h2>
+          ${list(page.familyReview)}
+        </article>
+        <article class="seo-card">
+          <h2>Privacy and consent checklist</h2>
+          ${list(page.privacyNotes)}
+        </article>
+        <article class="seo-card">
+          <h2>Editor handoff review</h2>
+          <p>Before checkout, make sure the brief includes the final contact email, deadline, video length, music notes, photo count, required captions, and any do-not-use instructions. A clean handoff reduces rework during a sensitive deadline.</p>
+        </article>
       </section>
 
       <section class="seo-grid" aria-label="Frequently asked questions">
