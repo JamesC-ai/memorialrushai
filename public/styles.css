@@ -319,10 +319,38 @@ pre {
   line-height: 1.65;
 }
 
+.seo-page {
+  max-width: 980px;
+}
+
+.seo-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.seo-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(31, 41, 55, 0.08);
+  padding: 16px;
+}
+
+.seo-card h2,
+.seo-card h3 {
+  line-height: 1.18;
+}
+
+.seo-card ul {
+  margin: 10px 0 0;
+}
+
 @media (max-width: 900px) {
   .hero,
   .grid,
-  .ops-strip {
+  .ops-strip,
+  .seo-grid {
     grid-template-columns: 1fr;
   }
 
