@@ -12,6 +12,9 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /Privacy: use secure transfer only/);
   assert.match(html, /Photo order/);
   assert.match(html, /Online memorial/);
+  assert.match(html, /Last-minute slideshow/);
+  assert.match(html, /Church playback/);
+  assert.match(html, /Editor handoff/);
 });
 
 test("ships browser-local tribute generator", async () => {
@@ -29,6 +32,8 @@ test("includes policy support and SEO discovery files", async () => {
   const sitemap = await readFile(new URL("../dist/sitemap.xml", import.meta.url), "utf8");
   const privacy = await readFile(new URL("../dist/privacy.html", import.meta.url), "utf8");
   const support = await readFile(new URL("../dist/support.html", import.meta.url), "utf8");
+  const indexNowKey = await readFile(new URL("../dist/a9285ac544aea7af0311e391eb112c5d.txt", import.meta.url), "utf8");
+  const indexNowScript = await readFile(new URL("../scripts/submit-indexnow.mjs", import.meta.url), "utf8");
   assert.match(robots, /Sitemap: https:\/\/memorial\.pagecheckai\.com\/sitemap\.xml/);
   assert.match(sitemap, /24-hour-memorial-video/);
   assert.match(sitemap, /privacy-first-memorial-video/);
@@ -37,8 +42,20 @@ test("includes policy support and SEO discovery files", async () => {
   assert.match(sitemap, /online-memorial-video-planner/);
   assert.match(sitemap, /grandparent-tribute-video-script/);
   assert.match(sitemap, /funeral-photo-scan-order/);
+  assert.match(sitemap, /last-minute-memorial-slideshow/);
+  assert.match(sitemap, /church-funeral-slideshow-playback/);
+  assert.match(sitemap, /veteran-memorial-video-brief/);
+  assert.match(sitemap, /memorial-video-caption-checklist/);
+  assert.match(sitemap, /memorial-video-music-notes/);
+  assert.match(sitemap, /portrait-memorial-video-layout/);
+  assert.match(sitemap, /family-review-memorial-video/);
+  assert.match(sitemap, /private-memorial-photo-folder/);
+  assert.match(sitemap, /bilingual-memorial-video-brief/);
+  assert.match(sitemap, /memorial-video-editor-handoff/);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
+  assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
+  assert.match(indexNowScript, /api\.indexnow\.org\/indexnow/);
 });
 
 test("builds thick memorial SEO pages for rush and privacy searches", async () => {
@@ -51,4 +68,13 @@ test("builds thick memorial SEO pages for rush and privacy searches", async () =
   assert.match(rushPage, /Confirm the service deadline/);
   assert.match(privacyPage, /expiring links, limited permissions, and deletion requests/);
   assert.match(privacyPage, /Review the final video on a private link/);
+});
+
+test("builds new memorial planning SEO pages", async () => {
+  const editorPage = await readFile(new URL("../dist/memorial-video-editor-handoff/index.html", import.meta.url), "utf8");
+  const bilingualPage = await readFile(new URL("../dist/bilingual-memorial-video-brief/index.html", import.meta.url), "utf8");
+  assert.match(editorPage, /deadline, video length, music notes, photo count/i);
+  assert.match(editorPage, /deletion instructions for source and working files/i);
+  assert.match(bilingualPage, /family reviewer for each language/i);
+  assert.match(bilingualPage, /Avoid machine-translated wording without family review/i);
 });

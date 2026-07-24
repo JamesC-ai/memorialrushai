@@ -298,6 +298,296 @@ const pages = [
       ["Should I send every album photo?", "No. Send a must-use set first, then optional extras if the deadline allows."],
     ],
   },
+  {
+    slug: "last-minute-memorial-slideshow",
+    title: "Last-minute memorial slideshow checklist",
+    description:
+      "Organize a last-minute memorial slideshow brief with the minimum details an editor needs before a service deadline.",
+    headline: "Prepare a last-minute memorial slideshow without losing the essentials.",
+    audience: "families and helpers working under a same-day or next-day tribute video deadline",
+    checklist: ["Playback deadline", "Must-use photos", "Name and date spellings", "Backup contact"],
+    steps: ["Create a must-use photo set.", "Confirm the service time and playback format.", "Write short caption notes.", "Send one clean editor brief."],
+    rushReadiness: [
+      "Start with the smallest complete photo set instead of waiting for every possible image.",
+      "Confirm venue format, deadline, and backup contact before payment.",
+      "Make one person responsible for final approvals so changes do not conflict.",
+    ],
+    familyReview: [
+      "Check names, dates, and relationship labels before the editor begins.",
+      "Flag any photo that should be omitted, cropped, or shown only briefly.",
+      "Keep extra photos optional if the deadline is tight.",
+    ],
+    privacyNotes: [
+      "Use a private transfer folder with limited access.",
+      "Do not post source folders publicly while collecting last-minute photos.",
+      "Ask for working-file deletion after delivery and approval.",
+    ],
+    faq: [
+      ["Can this help the same day?", "It can help organize the handoff quickly, but final delivery depends on editor availability and file readiness."],
+      ["What should I do first?", "Collect must-use photos, exact names and dates, service deadline, and playback format."],
+    ],
+  },
+  {
+    slug: "church-funeral-slideshow-playback",
+    title: "Church funeral slideshow playback checklist",
+    description:
+      "Prepare funeral slideshow details for church, chapel, projector, livestream, or venue playback without missing format notes.",
+    headline: "Make church funeral slideshow playback easier to coordinate.",
+    audience: "families, church staff, funeral homes, and helpers preparing a tribute video for a service venue",
+    checklist: ["Venue contact", "Screen or projector format", "File type request", "Playback deadline"],
+    steps: ["Confirm venue playback rules.", "Add screen and audio notes.", "Prepare a backup contact.", "Send the final editor and venue handoff."],
+    rushReadiness: [
+      "Ask the venue whether they need MP4, USB, download link, or livestream-ready file.",
+      "Confirm whether audio will be played through the chapel or livestream system.",
+      "Prepare a backup delivery method before the service day.",
+    ],
+    familyReview: [
+      "Check that captions are readable from the venue screen distance.",
+      "Confirm whether faith language, prayers, hymns, or scripture should appear.",
+      "Review the opening and closing slides before the final export.",
+    ],
+    privacyNotes: [
+      "Send venue files only to the approved service contact.",
+      "Do not include private family logistics in visible slides.",
+      "Remove venue and editor access after the service if possible.",
+    ],
+    faq: [
+      ["Should I ask the church about file format?", "Yes. File format and playback rules should be confirmed before the editor exports."],
+      ["Can the same video work online and in venue?", "Sometimes, but online captions and venue projection may need different readability checks."],
+    ],
+  },
+  {
+    slug: "veteran-memorial-video-brief",
+    title: "Veteran memorial video brief",
+    description:
+      "Prepare a respectful veteran memorial video brief with service notes, family memories, photos, captions, and privacy boundaries.",
+    headline: "Organize a veteran memorial video brief with respect and accuracy.",
+    audience: "families honoring military service alongside family, work, community, and personal memories",
+    checklist: ["Service branch and years", "Rank or unit notes to verify", "Family photo order", "Closing dedication"],
+    steps: ["Gather verified service details.", "Separate public captions from private notes.", "Add family chapters.", "Review all military wording before production."],
+    rushReadiness: [
+      "Verify branch, rank, unit, medals, and service years instead of guessing.",
+      "Decide how much of the video should focus on service versus family life.",
+      "Confirm whether flags, ceremony photos, or military music notes should be included.",
+    ],
+    familyReview: [
+      "Ask a family reviewer to confirm military terms and spelling.",
+      "Check whether any service details are private or uncertain.",
+      "Review the final dedication for tone and accuracy.",
+    ],
+    privacyNotes: [
+      "Do not include sensitive service records or IDs in the visible video.",
+      "Keep private documents out of the editor folder unless needed for reference.",
+      "Use secure transfer for military and family photos.",
+    ],
+    faq: [
+      ["Can I include military details?", "Yes, but verify them first and keep uncertain details out of visible captions."],
+      ["Should service photos come first?", "Only if that matches the family's preferred story order."],
+    ],
+  },
+  {
+    slug: "memorial-video-caption-checklist",
+    title: "Memorial video caption checklist",
+    description:
+      "Review memorial video captions for names, dates, relationships, tone, readability, and do-not-use details before editing.",
+    headline: "Check memorial video captions before the final render.",
+    audience: "families and editors reviewing title cards, photo captions, and closing dedication text",
+    checklist: ["Name spelling", "Dates and relationships", "Caption length", "Sensitive wording"],
+    steps: ["Draft short captions.", "Read them aloud.", "Confirm spelling with family.", "Send final text as one reviewed list."],
+    rushReadiness: [
+      "Use fewer captions when time is short so review stays manageable.",
+      "Keep each caption short enough to read while the photo is on screen.",
+      "Separate uncertain details into review notes instead of guessing.",
+    ],
+    familyReview: [
+      "Ask one person to check spellings and relationships.",
+      "Confirm whether humor, faith language, or family sayings feel appropriate.",
+      "Review the final closing slide twice before export.",
+    ],
+    privacyNotes: [
+      "Avoid private addresses, health details, and conflict in visible captions.",
+      "Keep private editor notes separate from public text.",
+      "Delete draft caption files after approval if they contain sensitive details.",
+    ],
+    faq: [
+      ["Should every photo have a caption?", "No. Chapter cards are often easier to review than captions for every image."],
+      ["How long should captions be?", "Short enough to read comfortably before the next photo appears."],
+    ],
+  },
+  {
+    slug: "memorial-video-music-notes",
+    title: "Memorial video music notes",
+    description:
+      "Prepare memorial video music notes for tone, timing, lyric sensitivity, quiet sections, and editor handoff.",
+    headline: "Organize memorial video music notes before editing starts.",
+    audience: "families choosing music tone, song references, instrumental preferences, or quiet sections for a tribute video",
+    checklist: ["Preferred tone", "Instrumental or lyrics", "Quiet opening or closing", "Permission or venue notes"],
+    steps: ["Describe the mood.", "List song references if any.", "Mark lyric sensitivities.", "Confirm music notes with family."],
+    rushReadiness: [
+      "Choose a mood direction first: soft piano, instrumental, faith-centered, classic, warm, or silent.",
+      "Tell the editor whether music should fade under captions or stay quiet at the closing dedication.",
+      "Confirm venue or livestream audio requirements before export.",
+    ],
+    familyReview: [
+      "Ask whether lyrics are appropriate for the service setting.",
+      "Confirm whether a specific song has personal meaning or should only be used as style reference.",
+      "Review the final audio level if the video will be projected in a venue.",
+    ],
+    privacyNotes: [
+      "Do not paste unrelated private stories into music notes.",
+      "Keep licensing or permission decisions separate from the planning brief.",
+      "Store private song references and family notes in a secure folder.",
+    ],
+    faq: [
+      ["Can I request no lyrics?", "Yes. Put instrumental, no lyrics, or quiet piano in the music preference field."],
+      ["Does this license music?", "No. It only prepares music notes for the editor and family review."],
+    ],
+  },
+  {
+    slug: "portrait-memorial-video-layout",
+    title: "Portrait memorial video layout",
+    description:
+      "Plan a portrait memorial video layout for phone screens, social sharing, vertical photos, captions, and private review.",
+    headline: "Prepare a portrait memorial video layout for phone viewing.",
+    audience: "families sharing tribute videos on phones, private links, social pages, or remote memorial groups",
+    checklist: ["Portrait or square format", "Caption size", "Vertical photo handling", "Private sharing link"],
+    steps: ["Choose portrait or square format.", "Mark vertical and horizontal photos.", "Keep captions short.", "Review on a phone before sharing."],
+    rushReadiness: [
+      "Confirm whether the final video is for phone viewing, social sharing, livestream, or venue playback.",
+      "Tell the editor how to handle horizontal photos inside a portrait frame.",
+      "Check caption size on a phone before approval.",
+    ],
+    familyReview: [
+      "Review the video on the same type of device most family members will use.",
+      "Check that faces are not cropped awkwardly in portrait layout.",
+      "Confirm whether the family wants a downloadable or view-only link.",
+    ],
+    privacyNotes: [
+      "Keep the review link private until approved.",
+      "Avoid posting source photos publicly just to collect them for a portrait video.",
+      "Remove access after the final video is delivered.",
+    ],
+    faq: [
+      ["Is portrait format good for a funeral service screen?", "Usually no. Confirm venue playback separately; portrait is mainly for phones or social viewing."],
+      ["Can captions be larger?", "Yes. Shorter captions with larger text usually work better on phones."],
+    ],
+  },
+  {
+    slug: "family-review-memorial-video",
+    title: "Family review for memorial video",
+    description:
+      "Create a family review checklist for memorial videos so names, dates, photo order, captions, and sensitive details are checked once.",
+    headline: "Run one calm family review before the memorial video is finalized.",
+    audience: "families coordinating feedback from several relatives without overwhelming the editor",
+    checklist: ["Decision owner", "Name and date review", "Do-not-use notes", "Final approval deadline"],
+    steps: ["Choose one reviewer.", "Send the generated checklist.", "Collect corrections in one list.", "Approve final changes before rendering."],
+    rushReadiness: [
+      "Set a clear review deadline before the editor starts final export.",
+      "Ask relatives to send corrections to one decision owner instead of separate threads.",
+      "Protect must-fix items and move optional ideas to a later version if needed.",
+    ],
+    familyReview: [
+      "Check spellings, dates, relationships, photo order, captions, and tone.",
+      "Decide which feedback is required versus optional.",
+      "Confirm final approval in writing before delivery.",
+    ],
+    privacyNotes: [
+      "Do not send the review link more widely than necessary.",
+      "Avoid collecting private family history in public comment threads.",
+      "Remove reviewer access after delivery.",
+    ],
+    faq: [
+      ["Should everyone review the video?", "Usually no. One decision owner plus a backup reviewer is easier under a deadline."],
+      ["How do we avoid conflicting edits?", "Collect all edits in one list and mark required versus optional."],
+    ],
+  },
+  {
+    slug: "private-memorial-photo-folder",
+    title: "Private memorial photo folder handoff",
+    description:
+      "Prepare a private memorial photo folder handoff with folder structure, access notes, deletion request, and editor instructions.",
+    headline: "Organize a private memorial photo folder before sending it to an editor.",
+    audience: "families handling sensitive source photos and contributor folders before tribute video production",
+    checklist: ["Private folder link", "Access permissions", "Must-use folder", "Optional photos", "Deletion request"],
+    steps: ["Create must-use and optional folders.", "Limit access to the editor and reviewer.", "Add caption notes separately.", "Request deletion after approval."],
+    rushReadiness: [
+      "Put must-use photos in their own folder so work can start quickly.",
+      "Keep optional or late-arriving photos separate from the main order.",
+      "Name folders clearly: must-use, optional, reference-only, and do-not-use.",
+    ],
+    familyReview: [
+      "Ask the family reviewer to confirm which folder controls final order.",
+      "Check whether any contributors added duplicate or sensitive photos.",
+      "Confirm when the folder should stop accepting new files.",
+    ],
+    privacyNotes: [
+      "Use private links with limited permissions.",
+      "Avoid public upload forms for family photos.",
+      "Ask the editor to delete working files after delivery and approval.",
+    ],
+    faq: [
+      ["Should I send one giant folder?", "No. Separate must-use, optional, reference-only, and do-not-use items."],
+      ["Can contributors upload photos?", "Yes, but keep access controlled and review new files before sending them to the editor."],
+    ],
+  },
+  {
+    slug: "bilingual-memorial-video-brief",
+    title: "Bilingual memorial video brief",
+    description:
+      "Prepare a bilingual memorial video brief with translated captions, name pronunciation, family review, and editor notes.",
+    headline: "Prepare a bilingual memorial video brief with reviewed wording.",
+    audience: "families creating tribute videos with two languages, translated captions, or pronunciation notes",
+    checklist: ["Language order", "Name pronunciation", "Translated captions", "Family reviewer for each language"],
+    steps: ["Choose language order.", "Draft short captions.", "Ask fluent family members to review.", "Send final translations to the editor."],
+    rushReadiness: [
+      "Keep translated captions short so both languages remain readable.",
+      "Decide whether each slide needs both languages or only key title cards.",
+      "Confirm pronunciation notes before voiceover or spoken introductions.",
+    ],
+    familyReview: [
+      "Ask a fluent reviewer for each language to check tone and meaning.",
+      "Avoid machine-translated wording without family review.",
+      "Confirm names, honorifics, and family terms before rendering.",
+    ],
+    privacyNotes: [
+      "Keep private family notes separate from public captions.",
+      "Do not include private immigration, medical, or family conflict details in visible text.",
+      "Use secure transfer for translation drafts if they include sensitive family history.",
+    ],
+    faq: [
+      ["Can every caption be bilingual?", "Yes, but shorter captions usually work better for readability."],
+      ["Should translations be reviewed?", "Yes. A family reviewer should check tone, names, and cultural meaning."],
+    ],
+  },
+  {
+    slug: "memorial-video-editor-handoff",
+    title: "Memorial video editor handoff",
+    description:
+      "Create a clean memorial video editor handoff with deadline, photo order, captions, music notes, privacy instructions, and support details.",
+    headline: "Send a memorial video editor handoff that reduces rework.",
+    audience: "families, coordinators, and assistants sending tribute details to a video editor",
+    checklist: ["Deadline and timezone", "Photo order", "Captions", "Music notes", "Privacy and deletion request"],
+    steps: ["Generate the editor handoff.", "Review details with family.", "Attach secure folder links.", "Include payment and support references."],
+    rushReadiness: [
+      "Put deadline, timezone, playback format, and backup contact at the top.",
+      "Separate must-use photos from optional extras.",
+      "Confirm the final contact email and decision owner before checkout.",
+    ],
+    familyReview: [
+      "Check the handoff for spelling, dates, tone, and do-not-use notes.",
+      "Make sure editor notes are practical and not conflicting.",
+      "Confirm what counts as final approval.",
+    ],
+    privacyNotes: [
+      "Include deletion instructions for source and working files.",
+      "Use secure folder links instead of public uploads.",
+      "Avoid sending private details that do not affect the video.",
+    ],
+    faq: [
+      ["What should the editor see first?", "Deadline, playback format, decision owner, must-use folder, and any do-not-use instructions."],
+      ["Can this prevent every revision?", "No. It reduces confusion, but family review and editor communication still matter."],
+    ],
+  },
 ];
 
 function escapeHtml(value) {
