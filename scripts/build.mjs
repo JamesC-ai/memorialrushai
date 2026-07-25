@@ -588,6 +588,296 @@ const pages = [
       ["Can this prevent every revision?", "No. It reduces confusion, but family review and editor communication still matter."],
     ],
   },
+  {
+    slug: "funeral-home-memorial-video-intake",
+    title: "Funeral home memorial video intake",
+    description:
+      "Prepare a funeral home memorial video intake with service timing, family contact, photo order, captions, music, playback, and privacy notes.",
+    headline: "Create a funeral home memorial video intake that is ready for production.",
+    audience: "funeral homes, arrangers, family liaisons, and coordinators collecting tribute details under a short deadline",
+    checklist: ["Primary family contact", "Service date and playback deadline", "Photo and caption plan", "Music and delivery format"],
+    steps: ["Collect only production details.", "Generate the intake pack.", "Review names and dates with family.", "Send secure links to the approved editor."],
+    rushReadiness: [
+      "Put the service time, timezone, venue, playback deadline, and backup contact at the top.",
+      "Separate must-use photos from optional contributions.",
+      "Confirm who can approve the final video and what happens if feedback arrives late.",
+    ],
+    familyReview: [
+      "Ask the family decision owner to confirm spelling, dates, relationships, and closing wording.",
+      "Flag faith, military, cultural, or personal details that need careful treatment.",
+      "Keep venue logistics and private family notes out of visible captions.",
+    ],
+    privacyNotes: [
+      "Use a private folder with access limited to the funeral home, family reviewer, and editor.",
+      "Do not collect unrelated medical, financial, or identification documents.",
+      "Set a deletion date for source and working files after approval.",
+    ],
+    faq: [
+      ["Does this replace the funeral home's intake process?", "No. It is a focused video-planning pack that should fit within the funeral home's approved workflow."],
+      ["Does MemorialRushAI receive the photos?", "No. The planner does not upload photos; use the approved secure transfer method."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-mother",
+    title: "Memorial slideshow for mother",
+    description:
+      "Plan a memorial slideshow for a mother with family chapters, photo notes, short captions, music preferences, and a closing dedication.",
+    headline: "Plan a memorial slideshow for a mother in the family's own voice.",
+    audience: "children, grandchildren, relatives, and friends organizing a tribute for a mother or maternal figure",
+    checklist: ["Preferred name and dates", "Family and life chapters", "Meaningful routines or sayings", "Closing message from the family"],
+    steps: ["Choose a simple story order.", "Group must-use photos.", "Draft short family-approved captions.", "Prepare the editor handoff."],
+    rushReadiness: [
+      "Start with a minimum set covering early life, family, work or service, favorite moments, and the closing tribute.",
+      "Use short captions so the photos remain central.",
+      "Choose one reviewer who can protect the deadline and family tone.",
+    ],
+    familyReview: [
+      "Confirm how children, grandchildren, relatives, and close friends should be represented.",
+      "Check family sayings, names, dates, and relationship labels carefully.",
+      "Remove any story or photo the family does not want shown publicly.",
+    ],
+    privacyNotes: [
+      "Keep private family history and contact details out of visible captions.",
+      "Share source photos through a restricted folder.",
+      "Review the final video privately before service playback or public sharing.",
+    ],
+    faq: [
+      ["Will the wording sound generic?", "The planner provides structure; edit every line so it sounds like the family."],
+      ["Does this create the final slideshow?", "No. It prepares the brief and handoff for an editor or family video maker."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-father",
+    title: "Memorial slideshow for father",
+    description:
+      "Create a memorial slideshow plan for a father with life chapters, family memories, work or service notes, music, and closing wording.",
+    headline: "Organize a memorial slideshow for a father with calm structure.",
+    audience: "children, grandchildren, relatives, and friends preparing a tribute for a father or paternal figure",
+    checklist: ["Name and dates", "Childhood, family, and work chapters", "Hobbies or service memories", "Closing dedication"],
+    steps: ["List the most important life chapters.", "Choose photos for each chapter.", "Add short caption and music notes.", "Review with the family decision owner."],
+    rushReadiness: [
+      "Protect the deadline by building a complete minimum version before adding extra photos.",
+      "Keep work, military, faith, hobby, and family sections balanced according to the family's wishes.",
+      "Confirm the final playback format before checkout.",
+    ],
+    familyReview: [
+      "Check names, ranks, titles, dates, and relationships rather than guessing.",
+      "Ask whether humor, favorite sayings, or informal photos fit the service tone.",
+      "Confirm the closing message with immediate family.",
+    ],
+    privacyNotes: [
+      "Do not include private account, medical, address, or service logistics in the public video.",
+      "Use limited-access source folders.",
+      "Request deletion of working files after delivery and approval.",
+    ],
+    faq: [
+      ["Can the plan include military or work history?", "Yes. Include only details the family has checked and wants in the tribute."],
+      ["Is final delivery guaranteed in 24 hours?", "No. The planner supports urgent organization; delivery depends on file readiness and the editor."],
+    ],
+  },
+  {
+    slug: "spouse-tribute-video-script",
+    title: "Spouse tribute video script",
+    description:
+      "Plan a spouse or partner tribute video script with shared-life chapters, family memories, captions, music notes, and a personal closing.",
+    headline: "Draft a spouse tribute video structure without flattening a shared life into generic words.",
+    audience: "spouses, partners, children, relatives, and close friends preparing a deeply personal memorial tribute",
+    checklist: ["How they met", "Shared home and family chapters", "Favorite routines and places", "Personal closing dedication"],
+    steps: ["Choose a few shared-life chapters.", "Add the must-use memories.", "Draft short title cards.", "Ask a trusted family reviewer to check the wording."],
+    rushReadiness: [
+      "Use a clear opening, shared-life middle, and closing dedication.",
+      "Keep longer private stories in editor notes rather than crowding the screen.",
+      "Confirm which voice the captions should use: spouse, family, or collective remembrance.",
+    ],
+    familyReview: [
+      "Read the wording aloud to check that it feels natural and personal.",
+      "Confirm sensitive relationship or family details before including them.",
+      "Protect the surviving spouse or partner from repeated broad review requests by naming one support reviewer.",
+    ],
+    privacyNotes: [
+      "Keep private correspondence, addresses, and intimate family details out of the public video unless explicitly approved.",
+      "Limit access to source photos and draft scripts.",
+      "Delete rejected drafts and unused source copies after approval.",
+    ],
+    faq: [
+      ["Can the script use first-person wording?", "Yes. Choose a consistent voice and have the spouse or approved reviewer confirm it."],
+      ["Does the planner write a finished eulogy?", "No. It structures short video wording and editor notes, not a complete eulogy service."],
+    ],
+  },
+  {
+    slug: "pet-memorial-video-planner",
+    title: "Pet memorial video planner",
+    description:
+      "Plan a pet memorial video with favorite photos, milestones, routines, family memories, music notes, and a gentle closing message.",
+    headline: "Create a pet memorial video brief that honors the bond without rushing the words.",
+    audience: "families and individuals preparing a private or shared tribute for a beloved pet",
+    checklist: ["Pet name and years", "Arrival and family milestones", "Favorite routines and places", "Closing message"],
+    steps: ["Choose the key memory chapters.", "Group favorite photos and clips.", "Add short captions and music notes.", "Review before sharing with an editor."],
+    rushReadiness: [
+      "Start with a small must-use set of clear photos.",
+      "Use simple chapters such as arrival, everyday life, adventures, family, and goodbye.",
+      "Decide whether the video is private, shared with friends, or posted publicly.",
+    ],
+    familyReview: [
+      "Confirm names, dates, and the tone that feels right for the household.",
+      "Keep wording gentle and specific rather than forcing a formal funeral style.",
+      "Check whether photos include private home details or people who should not be posted.",
+    ],
+    privacyNotes: [
+      "Review visible addresses, tags, phone numbers, and household details in pet photos.",
+      "Use a private source folder if the tribute is not public.",
+      "Ask for working-file deletion after final delivery.",
+    ],
+    faq: [
+      ["Can this be used for a private family keepsake?", "Yes. The brief can be prepared for a private video with no public posting."],
+      ["Does MemorialRushAI upload pet photos?", "No. The browser planner creates the brief only."],
+    ],
+  },
+  {
+    slug: "obituary-photo-slideshow-plan",
+    title: "Obituary photo slideshow plan",
+    description:
+      "Turn an obituary outline into a photo slideshow plan while separating public facts, family memories, captions, and private editor notes.",
+    headline: "Translate an obituary into a respectful photo slideshow structure.",
+    audience: "families, obituary writers, funeral coordinators, and editors using approved life details to plan a tribute",
+    checklist: ["Approved obituary facts", "Life chapter order", "Matching photo groups", "Closing acknowledgment"],
+    steps: ["Mark public obituary facts.", "Map each section to photo groups.", "Draft short title cards.", "Review details before production."],
+    rushReadiness: [
+      "Use the obituary structure as a guide, not a requirement to place every fact on screen.",
+      "Prioritize photos and concise chapter cards over dense paragraphs.",
+      "Mark facts or names that still need family confirmation.",
+    ],
+    familyReview: [
+      "Check that the obituary version used is final and family approved.",
+      "Confirm names, dates, places, affiliations, and service details.",
+      "Decide whether donation, service, or contact information belongs in the video at all.",
+    ],
+    privacyNotes: [
+      "Keep private obituary drafts separate from public captions.",
+      "Do not add home addresses or private family contacts to the slideshow.",
+      "Review the final video before it is linked from a public obituary page.",
+    ],
+    faq: [
+      ["Should the whole obituary appear in the video?", "Usually no. Use short chapter wording and let the photos carry the story."],
+      ["Does this verify obituary facts?", "No. A family reviewer must confirm every fact used in the video."],
+    ],
+  },
+  {
+    slug: "memorial-video-voiceover-script",
+    title: "Memorial video voiceover script",
+    description:
+      "Prepare a short memorial video voiceover script with pronunciation notes, pacing, life chapters, family-approved wording, and recording guidance.",
+    headline: "Plan a memorial video voiceover that leaves room for photos and silence.",
+    audience: "families, celebrants, narrators, and editors adding a short spoken introduction or chapter narration",
+    checklist: ["Speaker and point of view", "Name pronunciation", "Short chapter wording", "Pacing and silence notes"],
+    steps: ["Choose the narrator voice.", "Draft short sections.", "Read the script aloud.", "Record only after family approval."],
+    rushReadiness: [
+      "Keep narration concise enough for the photo runtime.",
+      "Add pronunciation notes for names, places, titles, and cultural terms.",
+      "Leave pauses for music, reflection, and transitions.",
+    ],
+    familyReview: [
+      "Ask the family to approve tone, facts, names, and the narrator's point of view.",
+      "Remove any medical, conflict, or relationship detail not intended for the audience.",
+      "Confirm whether faith language, humor, or direct quotations are appropriate.",
+    ],
+    privacyNotes: [
+      "Do not include private phone numbers, addresses, or service logistics in the recording.",
+      "Store voice recordings and draft scripts in a restricted folder.",
+      "Delete unused takes after the family approves the final version.",
+    ],
+    faq: [
+      ["Can AI pronunciation be trusted automatically?", "No. A person who knows the name or language should confirm pronunciation."],
+      ["Does the planner record the voiceover?", "No. It prepares the script and production notes."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-photo-count-runtime",
+    title: "Memorial slideshow photo count and runtime",
+    description:
+      "Plan memorial slideshow photo count and runtime with a practical pacing brief for service playback, music, captions, and review time.",
+    headline: "Choose a memorial slideshow photo count that fits the available runtime.",
+    audience: "families and coordinators deciding how many photos can fit a service slideshow without feeling rushed",
+    checklist: ["Target runtime", "Number of music tracks", "Must-use photo count", "Caption and title-card time"],
+    steps: ["Confirm venue runtime.", "Choose a must-use photo set.", "Allow time for titles and captions.", "Ask the editor to confirm final pacing."],
+    rushReadiness: [
+      "Start with the fixed playback window and work backward.",
+      "Keep a smaller must-use set plus optional extras.",
+      "Allow extra time for opening, closing, long captions, and deliberate pauses.",
+    ],
+    familyReview: [
+      "Watch the draft at normal speed rather than reviewing only still frames.",
+      "Check that important people and life chapters are represented fairly.",
+      "Remove duplicates before asking the editor to shorten every photo.",
+    ],
+    privacyNotes: [
+      "Do not upload source photos to a public calculator or comment thread.",
+      "Keep count and chapter notes separate from private family history.",
+      "Review the final video through a private link.",
+    ],
+    faq: [
+      ["Is there one correct seconds-per-photo rule?", "No. Captions, music, photo quality, and family tone affect pacing; ask the editor to confirm."],
+      ["Does the planner calculate final timing automatically?", "No. It helps organize a pacing brief for human review."],
+    ],
+  },
+  {
+    slug: "funeral-slideshow-tv-projector-format",
+    title: "Funeral slideshow format for TV or projector",
+    description:
+      "Prepare funeral slideshow playback notes for a chapel TV, projector, laptop, livestream, or backup USB.",
+    headline: "Confirm funeral slideshow playback format before the service.",
+    audience: "families, funeral homes, churches, venues, and editors coordinating reliable service playback",
+    checklist: ["Screen aspect ratio", "Accepted video format", "Audio connection", "Primary and backup playback copies"],
+    steps: ["Ask the venue for specifications.", "Add format notes to the brief.", "Test the final file on site.", "Keep a backup copy and contact."],
+    rushReadiness: [
+      "Confirm resolution, aspect ratio, codec, file size, and whether audio is available.",
+      "Bring the final file on two approved media options when possible.",
+      "Schedule a real playback test before guests arrive.",
+    ],
+    familyReview: [
+      "Check that title cards and captions remain readable from the back of the room.",
+      "Confirm the video starts and ends cleanly without desktop notifications or player controls.",
+      "Keep one final approved file clearly labeled to avoid playing the wrong draft.",
+    ],
+    privacyNotes: [
+      "Do not leave source photo folders or private drafts on venue equipment.",
+      "Use only the approved final playback file on shared devices.",
+      "Remove temporary copies from venue or borrowed computers after the service.",
+    ],
+    faq: [
+      ["Does MemorialRushAI convert the video format?", "No. It prepares playback requirements and handoff notes for the editor or venue."],
+      ["Is a USB copy enough?", "Bring a backup option and test both with the actual playback setup whenever possible."],
+    ],
+  },
+  {
+    slug: "remote-family-memorial-photo-collection",
+    title: "Remote family memorial photo collection",
+    description:
+      "Coordinate remote family memorial photo contributions with a deadline, naming guide, permissions, duplicates process, and private folder.",
+    headline: "Collect memorial photos from remote family without losing the deadline or privacy boundary.",
+    audience: "families and coordinators gathering photos from relatives in different cities, countries, or time zones",
+    checklist: ["Contribution deadline", "Private upload folder", "Simple filename guide", "Permission and do-not-use notes"],
+    steps: ["Create one restricted folder.", "Send a short contribution guide.", "Close submissions at the deadline.", "Move approved photos into the editor folder."],
+    rushReadiness: [
+      "Set an earlier family deadline than the editor deadline.",
+      "Ask for a few best photos rather than entire unsorted libraries.",
+      "Name one coordinator to remove duplicates and confirm captions.",
+    ],
+    familyReview: [
+      "Confirm contributor names, photo subjects, approximate dates, and permissions.",
+      "Mark photos that need cropping, restoration, or exclusion.",
+      "Keep late arrivals in a separate optional folder so production can continue.",
+    ],
+    privacyNotes: [
+      "Do not use a public contribution link that anyone can browse.",
+      "Limit folder access and remove contributor permissions after collection.",
+      "Ask the editor to delete working files after delivery and approval.",
+    ],
+    faq: [
+      ["Can several relatives use the same folder?", "Yes, if access is restricted and one coordinator reviews submissions."],
+      ["Does MemorialRushAI host the upload folder?", "No. Use a secure storage service controlled by the family or approved coordinator."],
+    ],
+  },
 ];
 
 function escapeHtml(value) {

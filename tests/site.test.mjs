@@ -15,6 +15,10 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /Last-minute slideshow/);
   assert.match(html, /Church playback/);
   assert.match(html, /Editor handoff/);
+  assert.match(html, /Funeral home intake/);
+  assert.match(html, /Pet memorial/);
+  assert.match(html, /Photo count &amp; runtime/);
+  assert.match(html, /TV\/projector format/);
 });
 
 test("ships browser-local tribute generator", async () => {
@@ -52,6 +56,21 @@ test("includes policy support and SEO discovery files", async () => {
   assert.match(sitemap, /private-memorial-photo-folder/);
   assert.match(sitemap, /bilingual-memorial-video-brief/);
   assert.match(sitemap, /memorial-video-editor-handoff/);
+  for (const slug of [
+    "funeral-home-memorial-video-intake",
+    "memorial-slideshow-for-mother",
+    "memorial-slideshow-for-father",
+    "spouse-tribute-video-script",
+    "pet-memorial-video-planner",
+    "obituary-photo-slideshow-plan",
+    "memorial-video-voiceover-script",
+    "memorial-slideshow-photo-count-runtime",
+    "funeral-slideshow-tv-projector-format",
+    "remote-family-memorial-photo-collection",
+  ]) {
+    assert.match(sitemap, new RegExp(slug));
+  }
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 34);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
@@ -77,4 +96,20 @@ test("builds new memorial planning SEO pages", async () => {
   assert.match(editorPage, /deletion instructions for source and working files/i);
   assert.match(bilingualPage, /family reviewer for each language/i);
   assert.match(bilingualPage, /Avoid machine-translated wording without family review/i);
+});
+
+test("builds relationship and playback memorial planning pages", async () => {
+  const funeralHomePage = await readFile(
+    new URL("../dist/funeral-home-memorial-video-intake/index.html", import.meta.url),
+    "utf8",
+  );
+  const petPage = await readFile(new URL("../dist/pet-memorial-video-planner/index.html", import.meta.url), "utf8");
+  const playbackPage = await readFile(
+    new URL("../dist/funeral-slideshow-tv-projector-format/index.html", import.meta.url),
+    "utf8",
+  );
+  assert.match(funeralHomePage, /does not upload photos/i);
+  assert.match(petPage, /private family keepsake/i);
+  assert.match(playbackPage, /Does MemorialRushAI convert the video format/i);
+  assert.match(playbackPage, /No\. It prepares playback requirements/i);
 });

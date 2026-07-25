@@ -2,6 +2,8 @@
 
 MemorialRushAI is a privacy-first rush memorial video intake and planning tool.
 
+The site includes 30 focused planning pages for family relationships, funeral-home intake, pet memorials, voiceover, photo collection, runtime, playback, privacy, and editor handoff.
+
 MVP:
 
 - Browser-local intake form.
