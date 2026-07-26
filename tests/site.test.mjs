@@ -19,6 +19,10 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /Pet memorial/);
   assert.match(html, /Photo count &amp; runtime/);
   assert.match(html, /TV\/projector format/);
+  assert.match(html, /Same-day checklist/);
+  assert.match(html, /Revision checklist/);
+  assert.match(html, /Private folder handoff/);
+  assert.match(html, /Livestream tribute/);
 });
 
 test("ships browser-local tribute generator", async () => {
@@ -67,14 +71,42 @@ test("includes policy support and SEO discovery files", async () => {
     "memorial-slideshow-photo-count-runtime",
     "funeral-slideshow-tv-projector-format",
     "remote-family-memorial-photo-collection",
+    "same-day-funeral-slideshow-checklist",
+    "memorial-video-photo-sorting-service",
+    "memorial-slideshow-usb-backup-checklist",
+    "funeral-livestream-tribute-video-plan",
+    "memorial-video-revision-checklist",
+    "memorial-slideshow-with-captions",
+    "funeral-video-music-permission-checklist",
+    "memorial-video-dropbox-handoff",
+    "memorial-slideshow-for-brother",
+    "memorial-slideshow-for-sister",
   ]) {
     assert.match(sitemap, new RegExp(slug));
   }
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 34);
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 44);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
   assert.match(indexNowScript, /api\.indexnow\.org\/indexnow/);
+});
+
+test("builds same-day and handoff memorial planning pages", async () => {
+  const sameDayPage = await readFile(
+    new URL("../dist/same-day-funeral-slideshow-checklist/index.html", import.meta.url),
+    "utf8",
+  );
+  const handoffPage = await readFile(new URL("../dist/memorial-video-dropbox-handoff/index.html", import.meta.url), "utf8");
+  const musicPage = await readFile(
+    new URL("../dist/funeral-video-music-permission-checklist/index.html", import.meta.url),
+    "utf8",
+  );
+  assert.match(sameDayPage, /Does this guarantee same-day delivery/i);
+  assert.match(sameDayPage, /delivery depends on editor availability/i);
+  assert.match(handoffPage, /restricted folder/i);
+  assert.match(handoffPage, /does not automatically upload family photos/i);
+  assert.match(musicPage, /Is this legal advice about music rights/i);
+  assert.match(musicPage, /rights and licensing should be checked separately/i);
 });
 
 test("builds thick memorial SEO pages for rush and privacy searches", async () => {

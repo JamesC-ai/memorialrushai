@@ -878,6 +878,296 @@ const pages = [
       ["Does MemorialRushAI host the upload folder?", "No. Use a secure storage service controlled by the family or approved coordinator."],
     ],
   },
+  {
+    slug: "same-day-funeral-slideshow-checklist",
+    title: "Same-day funeral slideshow checklist",
+    description:
+      "Prepare a same-day funeral slideshow checklist for the minimum viable photo set, deadline, captions, playback format, and backup contact.",
+    headline: "Organize a same-day funeral slideshow without losing the essentials.",
+    audience: "families, funeral homes, churches, and friends coordinating a tribute slideshow on a same-day deadline",
+    checklist: ["Must-use photo set", "Service deadline", "Playback format", "Backup family reviewer"],
+    steps: ["List the fixed deadline.", "Choose a small must-use photo set.", "Add short captions only where needed.", "Confirm playback and backup delivery."],
+    rushReadiness: [
+      "Start with the photos that must appear even if no extras can be added.",
+      "Use a shorter runtime so the editor has time for review, export, and playback testing.",
+      "Make one person responsible for final approval before the file is rendered.",
+    ],
+    familyReview: [
+      "Check names, dates, relationships, and the opening and closing slides first.",
+      "Skip disputed or unclear photos rather than delaying the whole slideshow.",
+      "Keep late additions in an optional folder so the editor can continue production.",
+    ],
+    privacyNotes: [
+      "Do not use public upload links for same-day family photos.",
+      "Share only the approved source folder with the editor or venue contact.",
+      "Ask for working file deletion after the service and final approval.",
+    ],
+    faq: [
+      ["Does this guarantee same-day delivery?", "No. It helps prepare a clear brief; delivery depends on editor availability and file readiness."],
+      ["How many photos should I start with?", "Start with the smallest meaningful set, then add optional extras only if time allows."],
+    ],
+  },
+  {
+    slug: "memorial-video-photo-sorting-service",
+    title: "Memorial video photo sorting service",
+    description:
+      "Plan a memorial video photo sorting handoff with life chapters, duplicate removal, must-use flags, captions, and privacy notes.",
+    headline: "Sort memorial video photos into a clearer editor handoff.",
+    audience: "families with large unsorted photo folders who need to help an editor find the right memories quickly",
+    checklist: ["Life chapter folders", "Must-use photos", "Duplicate removal", "Do-not-use notes"],
+    steps: ["Group photos by life chapter.", "Mark must-use images.", "Remove duplicates and unclear scans.", "Send the sorted folder with captions."],
+    rushReadiness: [
+      "Create a must-use folder before sorting every image.",
+      "Separate optional extras so production can begin while the family reviews late additions.",
+      "Use simple folder names like childhood, family, work, friends, hobbies, and closing.",
+    ],
+    familyReview: [
+      "Ask the person who knows the family history best to confirm people, dates, and places.",
+      "Mark photos that need cropping, restoration, or careful handling.",
+      "Avoid including every similar image from the same moment unless it tells a different part of the story.",
+    ],
+    privacyNotes: [
+      "Do not share the full archive more widely than needed.",
+      "Use restricted folders and remove access after delivery.",
+      "Keep private family context in notes, not visible captions, unless approved.",
+    ],
+    faq: [
+      ["Does MemorialRushAI sort the photos automatically?", "No. It creates a sorting checklist and editor handoff so a person can review the choices."],
+      ["Should I rename every photo?", "Simple chapter folders and must-use flags are often more useful than perfect filenames under a rush deadline."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-usb-backup-checklist",
+    title: "Memorial slideshow USB backup checklist",
+    description:
+      "Prepare a memorial slideshow USB backup checklist with final file naming, second copy, venue test, audio check, and deletion notes.",
+    headline: "Prepare a backup USB plan before the memorial slideshow is played.",
+    audience: "families, celebrants, funeral homes, and venue contacts who need a reliable backup copy for service playback",
+    checklist: ["Final approved filename", "Two backup copies", "Venue playback test", "Audio and screen check"],
+    steps: ["Ask the venue which formats work.", "Label the final approved file clearly.", "Prepare two backup copies.", "Test playback before guests arrive."],
+    rushReadiness: [
+      "Keep one file labeled final so the wrong draft is not played.",
+      "Bring a second approved copy on a separate drive or private download link.",
+      "Confirm who has the backup and how to reach them during the service.",
+    ],
+    familyReview: [
+      "Watch the file from beginning to end before copying it to USB.",
+      "Confirm captions are readable on the actual screen or projector.",
+      "Make sure the final file starts cleanly without desktop windows or player controls.",
+    ],
+    privacyNotes: [
+      "Do not leave source photos or private drafts on venue computers.",
+      "Use only the final approved video on shared playback devices.",
+      "Remove temporary copies after the service when possible.",
+    ],
+    faq: [
+      ["Is one USB enough?", "Use at least one backup option and test it with the actual venue setup whenever possible."],
+      ["Does MemorialRushAI create the video file?", "No. It prepares the playback and backup requirements for the editor or venue."],
+    ],
+  },
+  {
+    slug: "funeral-livestream-tribute-video-plan",
+    title: "Funeral livestream tribute video plan",
+    description:
+      "Plan a funeral livestream tribute video handoff with timing, caption readability, audio notes, private link review, and backup playback.",
+    headline: "Prepare tribute video notes for a funeral livestream.",
+    audience: "families, churches, funeral homes, and livestream coordinators adding a tribute video to an online service",
+    checklist: ["Livestream run-of-show", "Video start cue", "Caption readability", "Private review link"],
+    steps: ["Confirm when the tribute plays.", "Add livestream format notes.", "Review captions on a small screen.", "Prepare a backup playback path."],
+    rushReadiness: [
+      "Ask whether the video will be embedded in the stream, screen-shared, or played from venue equipment.",
+      "Keep captions and title cards large enough for remote viewers.",
+      "Share the final file early enough for a real stream test.",
+    ],
+    familyReview: [
+      "Review the tribute through the same private link remote guests may use.",
+      "Check that audio levels do not overwhelm spoken parts of the service.",
+      "Confirm the start and end cue with the livestream operator.",
+    ],
+    privacyNotes: [
+      "Use private review links before the public or family stream.",
+      "Do not include private service logistics in visible captions.",
+      "Confirm whether the livestream replay will remain online and who can access it.",
+    ],
+    faq: [
+      ["Does MemorialRushAI run the livestream?", "No. It prepares the tribute video planning notes for the livestream coordinator."],
+      ["Should captions be shorter for livestreams?", "Often yes. Remote viewers may watch on small screens, so use fewer words and larger text."],
+    ],
+  },
+  {
+    slug: "memorial-video-revision-checklist",
+    title: "Memorial video revision checklist",
+    description:
+      "Use a memorial video revision checklist to collect family feedback, spelling fixes, photo swaps, caption edits, and final approval notes.",
+    headline: "Collect memorial video revisions without confusing the final editor.",
+    audience: "families and coordinators reviewing a tribute video draft during a sensitive deadline",
+    checklist: ["One feedback owner", "Timestamped changes", "Name and date fixes", "Final approval note"],
+    steps: ["Watch the full draft once.", "Collect timestamped notes.", "Group changes by urgency.", "Send one final revision list."],
+    rushReadiness: [
+      "Avoid sending many separate messages from different reviewers.",
+      "Separate factual fixes from optional taste changes.",
+      "Agree on a revision cutoff time so the final render can be exported.",
+    ],
+    familyReview: [
+      "Check the opening title, life dates, relationship labels, and closing message first.",
+      "Use timestamps for photo swaps, caption edits, and pacing notes.",
+      "Confirm whether any requested change affects music timing or runtime.",
+    ],
+    privacyNotes: [
+      "Keep draft review links private.",
+      "Do not post unfinished tribute drafts to public threads for feedback.",
+      "Ask the editor to remove draft links after final approval.",
+    ],
+    faq: [
+      ["Can several relatives review the draft?", "Yes, but combine their notes into one clear revision list before sending it to the editor."],
+      ["Does this replace human final approval?", "No. A family reviewer should approve facts, tone, and sensitive photo choices."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-with-captions",
+    title: "Memorial slideshow with captions",
+    description:
+      "Plan a memorial slideshow with captions by organizing names, dates, places, relationship labels, title cards, and readability notes.",
+    headline: "Prepare captions for a memorial slideshow with care.",
+    audience: "families who want short captions, title cards, and relationship labels without crowding the tribute video",
+    checklist: ["Caption style", "Names and dates", "Relationship labels", "Readable title cards"],
+    steps: ["Choose short caption rules.", "Confirm spelling and dates.", "Mark photos that need captions.", "Review every visible word before export."],
+    rushReadiness: [
+      "Caption only the photos that need context under a tight deadline.",
+      "Use shorter lines so captions remain readable on TVs, projectors, and phones.",
+      "Keep longer stories in private notes instead of placing them on screen.",
+    ],
+    familyReview: [
+      "Ask a family member to verify names, places, and approximate dates.",
+      "Confirm whether humor, faith language, or family phrases are appropriate.",
+      "Check that captions do not cover important faces or details.",
+    ],
+    privacyNotes: [
+      "Avoid private addresses, medical details, or family conflicts in captions.",
+      "Keep sensitive notes separate from visible text.",
+      "Review the captioned draft privately before sharing.",
+    ],
+    faq: [
+      ["Should every photo have a caption?", "No. Use captions where they add context without slowing the tribute."],
+      ["Does MemorialRushAI write final captions automatically?", "It creates planning notes; family review is still required."],
+    ],
+  },
+  {
+    slug: "funeral-video-music-permission-checklist",
+    title: "Funeral video music permission checklist",
+    description:
+      "Prepare funeral video music notes with preferred mood, backup tracks, venue audio requirements, rights review, and no-lyrics alternatives.",
+    headline: "Organize funeral video music choices before the editor starts.",
+    audience: "families, funeral coordinators, and editors choosing respectful music for a tribute video or memorial slideshow",
+    checklist: ["Preferred mood", "Track names", "Rights review", "Backup no-lyrics option"],
+    steps: ["List music preferences.", "Confirm venue audio setup.", "Choose backup tracks.", "Review rights and family approval before final use."],
+    rushReadiness: [
+      "Give the editor mood and backup options instead of relying on one unavailable track.",
+      "Confirm whether the service venue can play audio from the final file.",
+      "Choose instrumental backup options when lyrics may distract from the tribute.",
+    ],
+    familyReview: [
+      "Ask whether a song has special family meaning or should be avoided.",
+      "Confirm the music tone fits the service setting.",
+      "Review the final mix on the intended playback speakers when possible.",
+    ],
+    privacyNotes: [
+      "Do not paste private streaming account details into the brief.",
+      "Keep rights and permission questions separate from emotional family notes.",
+      "Use approved transfer channels for any licensed audio files.",
+    ],
+    faq: [
+      ["Is this legal advice about music rights?", "No. It helps collect music notes; rights and licensing should be checked separately."],
+      ["What if the preferred song cannot be used?", "Provide backup mood notes and alternate tracks so the editor can keep moving."],
+    ],
+  },
+  {
+    slug: "memorial-video-dropbox-handoff",
+    title: "Memorial video Dropbox handoff",
+    description:
+      "Prepare a memorial video folder handoff for Dropbox, Google Drive, or another private storage service with permissions, naming, and deletion notes.",
+    headline: "Prepare a private folder handoff for memorial video files.",
+    audience: "families and coordinators using private cloud folders to share photos, captions, music notes, and editor briefs",
+    checklist: ["Restricted folder access", "Approved subfolders", "Editor brief file", "Deletion request"],
+    steps: ["Create one restricted folder.", "Add sorted subfolders and the brief.", "Share access only with approved people.", "Remove access after delivery."],
+    rushReadiness: [
+      "Place must-use photos and the editor brief at the top level or in clearly named folders.",
+      "Avoid changing folder structure after the editor starts unless you send a change note.",
+      "Keep an optional-late folder for additions that may not make the first render.",
+    ],
+    familyReview: [
+      "Check that the final brief and folder names match the honored person's preferred name.",
+      "Confirm contributors did not upload duplicate, private, or do-not-use images.",
+      "Keep one coordinator responsible for permissions and final access removal.",
+    ],
+    privacyNotes: [
+      "Use expiring or restricted links when the storage service supports them.",
+      "Do not make the folder public or searchable.",
+      "Ask the editor to confirm deletion of working copies after approval.",
+    ],
+    faq: [
+      ["Does MemorialRushAI provide the Dropbox folder?", "No. Use a storage account controlled by the family or approved coordinator."],
+      ["Can I use Google Drive instead?", "Yes. The handoff checklist works for any private folder with controlled access."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-brother",
+    title: "Memorial slideshow for brother",
+    description:
+      "Plan a memorial slideshow for a brother with sibling stories, family photos, friendships, hobbies, captions, and closing tribute notes.",
+    headline: "Plan a brother's memorial slideshow with warmth and structure.",
+    audience: "siblings, parents, spouses, and friends preparing a tribute slideshow for a brother",
+    checklist: ["Sibling memories", "Family and friend chapters", "Hobbies and work", "Closing message"],
+    steps: ["Choose the tone.", "Group photos by life chapter.", "Write short sibling captions.", "Review sensitive details with family."],
+    rushReadiness: [
+      "Start with a balanced set of childhood, family, friends, work, and favorite-place photos.",
+      "Ask one sibling or close family member to approve the emotional tone.",
+      "Keep optional stories in notes if the runtime is short.",
+    ],
+    familyReview: [
+      "Confirm which relationships and nicknames should appear on screen.",
+      "Review photos involving friends or private moments before inclusion.",
+      "Make sure the closing message represents the family voice accurately.",
+    ],
+    privacyNotes: [
+      "Avoid private conflicts, medical details, and addresses in captions.",
+      "Share drafts only through private review links.",
+      "Delete working folders after the family approves delivery.",
+    ],
+    faq: [
+      ["Can the tone be informal?", "Yes, if the family approves. Add tone notes so the editor understands what feels authentic."],
+      ["Does the planner choose the photos?", "No. It helps organize the family's choices and editor instructions."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-sister",
+    title: "Memorial slideshow for sister",
+    description:
+      "Plan a memorial slideshow for a sister with family chapters, friendship memories, captions, music notes, and a gentle review workflow.",
+    headline: "Prepare a sister's memorial slideshow with clear family notes.",
+    audience: "siblings, parents, spouses, children, and friends preparing a tribute slideshow for a sister",
+    checklist: ["Family chapters", "Friendship memories", "Caption wording", "Music and closing tribute"],
+    steps: ["Collect core photos.", "Group memories by chapter.", "Draft short captions.", "Ask a family reviewer to approve tone and wording."],
+    rushReadiness: [
+      "Select must-use photos first, then add optional friend and activity photos if time allows.",
+      "Keep captions short and personal rather than trying to explain every memory.",
+      "Confirm the deadline, runtime, and playback format before editing starts.",
+    ],
+    familyReview: [
+      "Ask whether family phrases, faith language, or favorite sayings should be included.",
+      "Confirm photo permissions and relationship labels before final rendering.",
+      "Review the closing card carefully because it often carries the emotional weight.",
+    ],
+    privacyNotes: [
+      "Do not include private health, family conflict, or contact details in visible text.",
+      "Use private folders and review links only.",
+      "Remove contributor and editor access after delivery and approval.",
+    ],
+    faq: [
+      ["Can friends contribute photos?", "Yes. Use a restricted folder and one coordinator to review submissions."],
+      ["Does MemorialRushAI upload the source files?", "No. The planner creates a brief; families use their own secure transfer method."],
+    ],
+  },
 ];
 
 function escapeHtml(value) {
