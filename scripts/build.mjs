@@ -1168,6 +1168,296 @@ const pages = [
       ["Does MemorialRushAI upload the source files?", "No. The planner creates a brief; families use their own secure transfer method."],
     ],
   },
+  {
+    slug: "memorial-video-for-husband",
+    title: "Memorial video for husband",
+    description:
+      "Plan a memorial video for a husband with family chapters, partnership memories, children or grandchildren notes, music preferences, and review guidance.",
+    headline: "Prepare a husband's memorial video with care and structure.",
+    audience: "spouses, children, siblings, and close friends preparing a tribute video for a husband",
+    checklist: ["Marriage and family chapters", "Work and friendship memories", "Favorite places", "Closing family message"],
+    steps: ["Choose the tone.", "Collect must-use family photos.", "Draft short captions.", "Ask one family reviewer to approve wording and photo order."],
+    rushReadiness: [
+      "Start with a few essential family photos before adding optional chapters.",
+      "Keep the story focused if the runtime is short.",
+      "Confirm service deadline, playback format, and final contact before checkout.",
+    ],
+    familyReview: [
+      "Review relationship labels and family names carefully.",
+      "Confirm whether faith language, humor, or personal sayings should appear.",
+      "Avoid asking too many reviewers to make last-minute changes.",
+    ],
+    privacyNotes: [
+      "Do not include private medical, financial, or family-conflict details in captions.",
+      "Use private folders and review links only.",
+      "Ask the editor to delete working copies after approval.",
+    ],
+    faq: [
+      ["Can the tone be personal?", "Yes. Add short tone notes so the editor understands what feels respectful and authentic."],
+      ["Does MemorialRushAI choose the photos?", "No. The planner organizes the family's chosen photos and instructions."],
+    ],
+  },
+  {
+    slug: "memorial-video-for-wife",
+    title: "Memorial video for wife",
+    description:
+      "Create a memorial video brief for a wife with family memories, friendship chapters, captions, music notes, and a gentle approval workflow.",
+    headline: "Plan a wife's memorial video with clear family notes.",
+    audience: "spouses, children, siblings, and friends preparing a tribute video for a wife",
+    checklist: ["Family chapters", "Friendship memories", "Favorite sayings", "Music and closing card"],
+    steps: ["Collect core photos.", "Group memories by chapter.", "Write short captions.", "Confirm the final family reviewer."],
+    rushReadiness: [
+      "Select must-use photos first and place optional additions in a separate note.",
+      "Keep captions short enough for a calm viewing pace.",
+      "Confirm final runtime and service playback requirements before editing starts.",
+    ],
+    familyReview: [
+      "Check names, dates, relationship labels, and preferred wording.",
+      "Ask whether certain photos or stories should remain private.",
+      "Review the closing card carefully before final render.",
+    ],
+    privacyNotes: [
+      "Avoid visible addresses, medical details, and private family context.",
+      "Use restricted folders for source photos and drafts.",
+      "Remove editor access after delivery and approval.",
+    ],
+    faq: [
+      ["Can friends contribute memories?", "Yes. Use one coordinator to review submissions and decide what enters the brief."],
+      ["Does the planner upload photos?", "No. It creates the brief only; use a secure family-controlled transfer method."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-son",
+    title: "Memorial slideshow for son",
+    description:
+      "Prepare a memorial slideshow for a son with childhood photos, family chapters, friendships, captions, and a careful review process.",
+    headline: "Organize a son's memorial slideshow with sensitivity.",
+    audience: "parents, siblings, partners, and close friends preparing a tribute slideshow for a son",
+    checklist: ["Childhood and family photos", "Friendship memories", "Hobbies or school/work chapters", "Short closing message"],
+    steps: ["Choose a small set of essential photos.", "Group memories by life chapter.", "Draft minimal captions.", "Ask a trusted reviewer to check tone."],
+    rushReadiness: [
+      "Use a smaller, approved photo set if the deadline is close.",
+      "Keep optional stories in notes when runtime is limited.",
+      "Confirm whether the family wants a quiet or celebration-of-life tone.",
+    ],
+    familyReview: [
+      "Review every caption for emotional fit.",
+      "Confirm which relationships, friends, or private moments should appear.",
+      "Avoid broad review loops during a sensitive deadline.",
+    ],
+    privacyNotes: [
+      "Avoid private health, crisis, conflict, or address details.",
+      "Share drafts only through private links.",
+      "Delete working folders after approval.",
+    ],
+    faq: [
+      ["Can the slideshow be very simple?", "Yes. A simple photo order with a short closing card can be more respectful than a crowded edit."],
+      ["Does MemorialRushAI provide grief counseling?", "No. It helps organize a tribute video brief and does not replace personal or professional support."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-daughter",
+    title: "Memorial slideshow for daughter",
+    description:
+      "Plan a memorial slideshow for a daughter with family memories, favorite photos, captions, music notes, and private review instructions.",
+    headline: "Prepare a daughter's memorial slideshow with gentle structure.",
+    audience: "parents, siblings, partners, and close friends preparing a tribute slideshow for a daughter",
+    checklist: ["Family and childhood chapters", "Friends and favorite places", "Caption wording", "Music and closing message"],
+    steps: ["Collect must-use photos.", "Sort by life chapter.", "Draft very short captions.", "Confirm tone with one family reviewer."],
+    rushReadiness: [
+      "Prioritize photos the family already agrees on.",
+      "Use short captions to avoid overexplaining emotional moments.",
+      "Confirm service format, deadline, and delivery contact early.",
+    ],
+    familyReview: [
+      "Check relationship labels, names, and sensitive stories.",
+      "Ask whether any photos should be reserved for private family viewing.",
+      "Limit changes after the family approves the draft.",
+    ],
+    privacyNotes: [
+      "Avoid private medical, location, conflict, or contact details.",
+      "Use restricted source folders and review links.",
+      "Ask for deletion of working files after approval.",
+    ],
+    faq: [
+      ["Should we include every favorite photo?", "No. Choose the strongest set for the runtime and keep extras in a private family folder."],
+      ["Does the planner store source photos?", "No. The browser planner creates text instructions only."],
+    ],
+  },
+  {
+    slug: "memorial-video-for-friend",
+    title: "Memorial video for friend",
+    description:
+      "Plan a memorial video for a friend with shared memories, chosen-family chapters, photos, captions, and approval notes.",
+    headline: "Organize a friend's memorial video without losing family consent.",
+    audience: "friends, chosen family, coworkers, classmates, and coordinators preparing a tribute with family awareness",
+    checklist: ["Friendship chapters", "Family consent notes", "Shared activities", "Closing tribute"],
+    steps: ["Collect approved photos.", "Group by friendship chapter.", "Write short captions.", "Confirm family or coordinator approval."],
+    rushReadiness: [
+      "Ask the family or coordinator what tone and photos are appropriate.",
+      "Keep optional friend stories separate if runtime is short.",
+      "Confirm whether the final video is for service, private sharing, or online memorial use.",
+    ],
+    familyReview: [
+      "Respect do-not-use notes from family members.",
+      "Review captions for names, relationships, and context.",
+      "Use one coordinator to approve the final brief.",
+    ],
+    privacyNotes: [
+      "Do not publish or share photos beyond the approved audience.",
+      "Avoid private stories, locations, and contact information.",
+      "Use private review links and remove access after delivery.",
+    ],
+    faq: [
+      ["Can friends lead the video?", "Yes, but it is best to confirm with the family or service coordinator first."],
+      ["Does this publish the memorial video?", "No. It prepares planning notes and an editor brief only."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-opening-closing-cards",
+    title: "Memorial slideshow opening and closing cards",
+    description:
+      "Prepare opening and closing card wording for a memorial slideshow with names, dates, family thanks, service notes, and privacy reminders.",
+    headline: "Write memorial slideshow opening and closing cards clearly.",
+    audience: "families, funeral coordinators, editors, and volunteers preparing title cards and final thank-you slides",
+    checklist: ["Preferred name", "Dates or years", "Opening title", "Closing thank-you"],
+    steps: ["Confirm spelling and dates.", "Choose a short opening card.", "Draft a closing message.", "Review wording with the family before rendering."],
+    rushReadiness: [
+      "Lock the opening card early because it affects the whole video.",
+      "Keep final thanks short for readability.",
+      "Confirm whether service location or livestream details should appear.",
+    ],
+    familyReview: [
+      "Check every name, date, and relationship label.",
+      "Ask whether faith language, poems, or quotes are approved.",
+      "Avoid last-minute typography changes unless they fix accuracy.",
+    ],
+    privacyNotes: [
+      "Do not include private addresses, phone numbers, or family contact details.",
+      "Use private drafts for review.",
+      "Keep approved text in the editor handoff.",
+    ],
+    faq: [
+      ["Can the closing card thank everyone?", "Yes. Keep it concise and readable on the playback screen."],
+      ["Does MemorialRushAI design the card?", "No. It helps draft and organize the wording for the editor."],
+    ],
+  },
+  {
+    slug: "memorial-video-photo-permission-checklist",
+    title: "Memorial video photo permission checklist",
+    description:
+      "Create a practical checklist for family photo permissions, do-not-use notes, private images, minors, and final approval before a memorial video is shared.",
+    headline: "Review memorial photo permissions before sharing the video.",
+    audience: "families, coordinators, editors, and volunteers collecting photos from multiple contributors",
+    checklist: ["Contributor source", "Do-not-use notes", "Private image flags", "Final approval owner"],
+    steps: ["Collect photo source notes.", "Mark private or do-not-use images.", "Confirm who approves the final selection.", "Share the draft only with approved reviewers."],
+    rushReadiness: [
+      "Use must-use and do-not-use folders when time is short.",
+      "Ask contributors to label private photos clearly.",
+      "Avoid waiting for broad consent on optional images if the deadline is close.",
+    ],
+    familyReview: [
+      "Confirm images involving children, former partners, coworkers, or private settings.",
+      "Remove any photo the family is unsure about.",
+      "Keep a written approval note with the final brief.",
+    ],
+    privacyNotes: [
+      "Use restricted folders and private review links.",
+      "Avoid public upload forms.",
+      "Ask the editor to delete source and working files after approval.",
+    ],
+    faq: [
+      ["Is this legal consent advice?", "No. It is an organization checklist; legal or formal consent questions should be handled separately."],
+      ["Can we skip uncertain photos?", "Yes. During a rush deadline, omitting uncertain photos is often safer than including them."],
+    ],
+  },
+  {
+    slug: "funeral-program-video-link-checklist",
+    title: "Funeral program video link checklist",
+    description:
+      "Prepare notes for including a memorial video link or QR reference in a funeral program while keeping privacy, permissions, and access limits clear.",
+    headline: "Plan a funeral program video link without making files public by accident.",
+    audience: "families, funeral homes, church coordinators, and volunteers preparing printed or digital service programs",
+    checklist: ["Private video link", "Access setting", "QR code owner", "Expiration or removal note"],
+    steps: ["Confirm where the video will be hosted.", "Check access settings.", "Add link or QR notes to the program draft.", "Test the link before printing or sharing."],
+    rushReadiness: [
+      "Use a stable link only after final approval.",
+      "Test the link on a phone before the program is printed.",
+      "Have a backup playback file for the service itself.",
+    ],
+    familyReview: [
+      "Confirm whether the video should be public, unlisted, or private.",
+      "Review the printed wording with the family.",
+      "Decide when the link should be removed or access should be limited.",
+    ],
+    privacyNotes: [
+      "Do not publish source photo folders through the program link.",
+      "Avoid public links if the family wants private access.",
+      "Use a family-controlled hosting or sharing account when possible.",
+    ],
+    faq: [
+      ["Does MemorialRushAI host the video link?", "No. It helps organize the checklist for a family-controlled or approved video link."],
+      ["Should the QR code be public?", "Only if the family approves public access."],
+    ],
+  },
+  {
+    slug: "memorial-video-social-sharing-checklist",
+    title: "Memorial video social sharing checklist",
+    description:
+      "Prepare a memorial video sharing checklist for Facebook, YouTube, private groups, or family messages with caption, access, and consent notes.",
+    headline: "Share a memorial video online with privacy and family review in mind.",
+    audience: "families and coordinators deciding whether to share a memorial video online after a service",
+    checklist: ["Approved platform", "Caption text", "Audience setting", "Family consent notes"],
+    steps: ["Choose the sharing audience.", "Draft a short caption.", "Confirm privacy settings.", "Review with the family before posting."],
+    rushReadiness: [
+      "Do not rush a public post before the family approves.",
+      "Use private groups or direct sharing when the audience should be limited.",
+      "Keep a separate service playback copy from any social version.",
+    ],
+    familyReview: [
+      "Ask whether comments, tagging, or resharing should be limited.",
+      "Confirm visible names, dates, and relationship labels.",
+      "Choose one person to handle posting and updates.",
+    ],
+    privacyNotes: [
+      "Avoid posting source photo folders.",
+      "Review platform privacy settings before sharing.",
+      "Remove drafts or links that should not remain online.",
+    ],
+    faq: [
+      ["Does MemorialRushAI post to social media?", "No. It prepares sharing notes only; posting requires family approval."],
+      ["Can we make the video private?", "Yes. Use the platform's private or unlisted settings if that matches the family's wishes."],
+    ],
+  },
+  {
+    slug: "memorial-video-family-copy-after-service",
+    title: "Memorial video family copy after service",
+    description:
+      "Plan the after-service handoff for family copies of a memorial video, including download links, USB copies, captions, deletion notes, and support details.",
+    headline: "Prepare family copies after the memorial service.",
+    audience: "families, coordinators, and editors handling final memorial video delivery after the service",
+    checklist: ["Final approved file", "Family download link", "USB or backup copy", "Deletion and support note"],
+    steps: ["Confirm the final approved version.", "Create the family handoff note.", "Share through approved private channels.", "Remove working access after delivery."],
+    rushReadiness: [
+      "Keep one final file name and version.",
+      "Separate service playback copies from family archive copies.",
+      "Record who received the final link or USB copy.",
+    ],
+    familyReview: [
+      "Confirm names, dates, captions, and music before archiving.",
+      "Ask whether a shorter social version is needed later.",
+      "Keep support contact and receipt details with the handoff note.",
+    ],
+    privacyNotes: [
+      "Use private links or physical copies according to family preference.",
+      "Avoid leaving editor access open longer than needed.",
+      "Ask for deletion of working files after final approval.",
+    ],
+    faq: [
+      ["Does this create USB copies?", "No. It creates the handoff checklist; production and copying are handled by the family or editor."],
+      ["Should we keep source photos online?", "Only as long as needed and only in a restricted folder controlled by the family."],
+    ],
+  },
 ];
 
 function escapeHtml(value) {

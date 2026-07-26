@@ -81,10 +81,20 @@ test("includes policy support and SEO discovery files", async () => {
     "memorial-video-dropbox-handoff",
     "memorial-slideshow-for-brother",
     "memorial-slideshow-for-sister",
+    "memorial-video-for-husband",
+    "memorial-video-for-wife",
+    "memorial-slideshow-for-son",
+    "memorial-slideshow-for-daughter",
+    "memorial-video-for-friend",
+    "memorial-slideshow-opening-closing-cards",
+    "memorial-video-photo-permission-checklist",
+    "funeral-program-video-link-checklist",
+    "memorial-video-social-sharing-checklist",
+    "memorial-video-family-copy-after-service",
   ]) {
     assert.match(sitemap, new RegExp(slug));
   }
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 44);
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 54);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
@@ -144,4 +154,20 @@ test("builds relationship and playback memorial planning pages", async () => {
   assert.match(petPage, /private family keepsake/i);
   assert.match(playbackPage, /Does MemorialRushAI convert the video format/i);
   assert.match(playbackPage, /No\. It prepares playback requirements/i);
+});
+
+test("builds new family sharing and consent planning pages", async () => {
+  const sonPage = await readFile(new URL("../dist/memorial-slideshow-for-son/index.html", import.meta.url), "utf8");
+  const permissionPage = await readFile(
+    new URL("../dist/memorial-video-photo-permission-checklist/index.html", import.meta.url),
+    "utf8",
+  );
+  const programLinkPage = await readFile(new URL("../dist/funeral-program-video-link-checklist/index.html", import.meta.url), "utf8");
+  const socialPage = await readFile(new URL("../dist/memorial-video-social-sharing-checklist/index.html", import.meta.url), "utf8");
+  const copyPage = await readFile(new URL("../dist/memorial-video-family-copy-after-service/index.html", import.meta.url), "utf8");
+  assert.match(sonPage, /does not replace personal or professional support/i);
+  assert.match(permissionPage, /legal consent advice/i);
+  assert.match(programLinkPage, /Does MemorialRushAI host the video link/i);
+  assert.match(socialPage, /Does MemorialRushAI post to social media/i);
+  assert.match(copyPage, /does this create USB copies/i);
 });
