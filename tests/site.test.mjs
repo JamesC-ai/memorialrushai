@@ -108,10 +108,20 @@ test("includes policy support and SEO discovery files", async () => {
     "memorial-video-title-card-wording",
     "funeral-service-projector-test-checklist",
     "memorial-video-file-deletion-checklist",
+    "memorial-video-church-media-team-handoff",
+    "memorial-video-obituary-link-checklist",
+    "memorial-video-grandchild-photo-request",
+    "memorial-slideshow-military-service-section",
+    "memorial-video-photo-duplicate-cleanup",
+    "memorial-video-music-memory-notes",
+    "memorial-video-sensitive-photo-boundary",
+    "memorial-video-qr-code-program-note",
+    "memorial-video-after-service-update-request",
+    "memorial-video-family-archive-index",
   ]) {
     assert.match(sitemap, new RegExp(slug));
   }
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 64);
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 74);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
@@ -205,4 +215,19 @@ test("builds new service-day and aftercare planning pages", async () => {
   assert.match(latePhotoPage, /can late photos always be added/i);
   assert.match(projectorPage, /does MemorialRushAI convert video files/i);
   assert.match(deletionPage, /does MemorialRushAI delete files for us/i);
+});
+
+test("builds expanded media handoff and family archive pages with safe boundaries", async () => {
+  const churchPage = await readFile(new URL("../dist/memorial-video-church-media-team-handoff/index.html", import.meta.url), "utf8");
+  const obituaryPage = await readFile(new URL("../dist/memorial-video-obituary-link-checklist/index.html", import.meta.url), "utf8");
+  const militaryPage = await readFile(new URL("../dist/memorial-slideshow-military-service-section/index.html", import.meta.url), "utf8");
+  const musicPage = await readFile(new URL("../dist/memorial-video-music-memory-notes/index.html", import.meta.url), "utf8");
+  const sensitivePage = await readFile(new URL("../dist/memorial-video-sensitive-photo-boundary/index.html", import.meta.url), "utf8");
+  const archivePage = await readFile(new URL("../dist/memorial-video-family-archive-index/index.html", import.meta.url), "utf8");
+  assert.match(churchPage, /does MemorialRushAI contact the church/i);
+  assert.match(obituaryPage, /No\. Family and qualified review decide public sharing/i);
+  assert.match(militaryPage, /does not certify service history/i);
+  assert.match(musicPage, /Rights and licensing should be checked separately/i);
+  assert.match(sensitivePage, /planning checklist only/i);
+  assert.match(archivePage, /storage stays with the family/i);
 });
