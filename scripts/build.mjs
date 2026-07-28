@@ -1458,6 +1458,296 @@ const pages = [
       ["Should we keep source photos online?", "Only as long as needed and only in a restricted folder controlled by the family."],
     ],
   },
+  {
+    slug: "memorial-video-photo-scanning-tips",
+    title: "Memorial video photo scanning tips",
+    description:
+      "Prepare a photo scanning checklist for memorial videos, including file order, crop notes, duplicates, privacy, and editor handoff details.",
+    headline: "Scan memorial photos with a cleaner editor handoff in mind.",
+    audience: "families, volunteers, and coordinators digitizing printed photos before a tribute video deadline",
+    checklist: ["Scan order", "Duplicate photos", "Crop and rotation notes", "Private-photo flags"],
+    steps: ["Create a must-use scan folder.", "Name files in rough story order.", "Mark duplicates and sensitive photos.", "Send scan notes with the editor brief."],
+    rushReadiness: [
+      "Scan the must-use photos first before adding optional albums.",
+      "Keep a simple sequence number so the editor can follow the family's story.",
+      "Use phone scans only as a backup when flatbed scans are not available in time.",
+    ],
+    familyReview: [
+      "Ask one reviewer to confirm names, dates, and photo order.",
+      "Flag photos that should be cropped, repaired, softened, or omitted.",
+      "Avoid arguing over optional duplicates when the deadline is close.",
+    ],
+    privacyNotes: [
+      "Do not post scan folders publicly while collecting photos.",
+      "Avoid scanning private documents that do not belong in the tribute.",
+      "Ask the editor to delete working scans after delivery and approval.",
+    ],
+    faq: [
+      ["Does MemorialRushAI scan or restore photos?", "No. It prepares scanning and handoff notes; scanning and restoration are separate work."],
+      ["What if a photo is blurry?", "Mark it for review and include a backup option if possible."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-aunt",
+    title: "Memorial slideshow for aunt",
+    description:
+      "Plan a memorial slideshow for an aunt with family-role notes, favorite memories, photo chapters, captions, and closing wording.",
+    headline: "Prepare an aunt memorial slideshow with warm family context.",
+    audience: "nieces, nephews, siblings, and relatives preparing photos and wording for a family tribute",
+    checklist: ["Family role", "Favorite memories", "Photo chapters", "Closing dedication"],
+    steps: ["Gather family photos.", "Choose the tone and chapter order.", "Draft short captions.", "Review wording with close relatives."],
+    rushReadiness: [
+      "Start with a small must-use set of photos from different life chapters.",
+      "Keep captions short and relationship-focused.",
+      "Ask one person to collect final family wording before sending the brief.",
+    ],
+    familyReview: [
+      "Confirm whether nieces, nephews, siblings, or extended family should be named individually.",
+      "Check that the wording feels like the family's voice.",
+      "Review sensitive family photos before including them.",
+    ],
+    privacyNotes: [
+      "Use private folders for family photos.",
+      "Avoid public sharing before family approval.",
+      "Delete draft scripts and working files after approval if the family prefers.",
+    ],
+    faq: [
+      ["Does this replace writing a personal tribute?", "No. It gives structure; the family should edit wording until it feels personal."],
+      ["Can it include humor?", "Yes, if close relatives agree the tone is appropriate."],
+    ],
+  },
+  {
+    slug: "memorial-slideshow-for-uncle",
+    title: "Memorial slideshow for uncle",
+    description:
+      "Plan a memorial slideshow for an uncle with photo order, story notes, captions, tone guidance, and editor-ready handoff details.",
+    headline: "Prepare an uncle memorial slideshow without losing the family's voice.",
+    audience: "nieces, nephews, siblings, cousins, and friends preparing a respectful family tribute",
+    checklist: ["Relationship notes", "Life chapters", "Hobby or service memories", "Final thank-you"],
+    steps: ["Collect the first photo set.", "Group by family, work, hobbies, and friends.", "Draft chapter notes.", "Confirm the final dedication."],
+    rushReadiness: [
+      "Use broad chapter notes instead of long narration when the deadline is tight.",
+      "Separate must-use photos from optional additions.",
+      "Confirm service playback format before sending the brief.",
+    ],
+    familyReview: [
+      "Check names, relationships, and any military, faith, or cultural references.",
+      "Ask whether certain stories should remain private.",
+      "Review the closing line with immediate family.",
+    ],
+    privacyNotes: [
+      "Keep source photos in a restricted family folder.",
+      "Avoid including addresses, private conflicts, or health details in visible captions.",
+      "Ask for working file deletion after delivery and approval.",
+    ],
+    faq: [
+      ["Can friends contribute photos?", "Yes. Ask them to send photos through an approved private folder with short context notes."],
+      ["Does MemorialRushAI create the final slideshow?", "No. It prepares the brief and handoff checklist."],
+    ],
+  },
+  {
+    slug: "memorial-video-thank-you-message",
+    title: "Memorial video thank you message",
+    description:
+      "Draft a short thank-you message for the closing card of a memorial video while keeping tone, names, and family approval clear.",
+    headline: "Prepare a closing thank-you message for a memorial video.",
+    audience: "families and service coordinators writing final slide wording under time pressure",
+    checklist: ["Closing wording", "Family signature", "Faith or gratitude notes", "Names to include or omit"],
+    steps: ["Choose a simple tone.", "Draft one or two closing lines.", "Confirm the family signature.", "Review the final card before rendering."],
+    rushReadiness: [
+      "Keep the thank-you message short enough to read before the video ends.",
+      "Avoid trying to name every contributor unless the family has approved the list.",
+      "Use one final version so the editor does not receive conflicting wording.",
+    ],
+    familyReview: [
+      "Read the final line aloud.",
+      "Confirm spelling for family names and group signatures.",
+      "Ask whether faith language, service language, or simple gratitude is preferred.",
+    ],
+    privacyNotes: [
+      "Do not include private contact details on the closing card.",
+      "Keep contributor notes separate from visible video text.",
+      "Delete unused draft wording if the family requests it.",
+    ],
+    faq: [
+      ["Can MemorialRushAI write the exact final line?", "It can help structure options, but the family should approve every visible word."],
+      ["Should we include a donation link?", "Only if the family approves and the service coordinator confirms the right placement."],
+    ],
+  },
+  {
+    slug: "funeral-slideshow-rehearsal-checklist",
+    title: "Funeral slideshow rehearsal checklist",
+    description:
+      "Prepare a funeral slideshow rehearsal checklist for playback file, venue screen, audio, captions, backup copy, and final approval.",
+    headline: "Rehearse a funeral slideshow before the service starts.",
+    audience: "families, funeral homes, church media teams, celebrants, and volunteers handling playback",
+    checklist: ["Playback file", "Audio test", "Screen format", "Backup copy"],
+    steps: ["Confirm the final approved video.", "Test playback on venue equipment.", "Check audio and captions.", "Keep a backup file ready."],
+    rushReadiness: [
+      "Test the exact file on the exact playback device if possible.",
+      "Bring a backup copy on a second device or USB drive.",
+      "Confirm who will start, pause, or replay the slideshow during the service.",
+    ],
+    familyReview: [
+      "Let the family approve the final file before rehearsal.",
+      "Check names, dates, captions, and photo order one last time.",
+      "Decide whether the video should loop before or after the service.",
+    ],
+    privacyNotes: [
+      "Do not leave source photo folders on venue devices.",
+      "Remove temporary files after the service.",
+      "Keep public playback copies separate from family archive copies.",
+    ],
+    faq: [
+      ["Does MemorialRushAI test the venue equipment?", "No. It prepares the rehearsal checklist for the family, venue, or media volunteer."],
+      ["Should we bring a backup?", "Yes. Bring at least one backup copy and know who has it."],
+    ],
+  },
+  {
+    slug: "memorial-video-late-photo-additions",
+    title: "Memorial video late photo additions",
+    description:
+      "Plan how to handle late memorial photo additions without derailing the edit, including cutoff time, must-use flags, duplicates, and family approval.",
+    headline: "Handle late memorial photo additions calmly.",
+    audience: "families and coordinators receiving extra photos after the tribute edit has already started",
+    checklist: ["Cutoff time", "Must-use flag", "Duplicate check", "Approval owner"],
+    steps: ["Set a late-photo cutoff.", "Mark must-use additions only.", "Check for duplicates.", "Send one clear update to the editor."],
+    rushReadiness: [
+      "Protect the edit by limiting late additions to truly important photos.",
+      "Send one consolidated update instead of many small messages.",
+      "Avoid changing chapter structure unless the family approves the extra time.",
+    ],
+    familyReview: [
+      "Ask the decision owner to approve every late photo.",
+      "Confirm whether the late photo replaces another image or extends the runtime.",
+      "Check captions and relationship labels before sending.",
+    ],
+    privacyNotes: [
+      "Use the same secure folder as the original handoff.",
+      "Do not add photos from public comments without family approval.",
+      "Request deletion of unused late photos after the edit is complete.",
+    ],
+    faq: [
+      ["Can late photos always be added?", "No. It depends on timing, editor availability, and whether the final render has started."],
+      ["Should every late photo be included?", "No. During a rush edit, mark only true must-use additions."],
+    ],
+  },
+  {
+    slug: "memorial-video-portrait-landscape-mix",
+    title: "Memorial video portrait and landscape photo mix",
+    description:
+      "Prepare editor notes for a memorial video that mixes portrait and landscape photos, including crop preference, background style, and do-not-crop flags.",
+    headline: "Plan a memorial video with portrait and landscape photos.",
+    audience: "families and editors working with photos from phones, scans, albums, and social messages",
+    checklist: ["Crop preference", "Do-not-crop photos", "Background style", "Important faces"],
+    steps: ["Group portrait and landscape photos.", "Mark photos that must not be cropped.", "Add background and framing notes.", "Review a sample frame if available."],
+    rushReadiness: [
+      "Do not spend too long forcing every image into the same shape.",
+      "Flag only the photos where cropping would remove someone important.",
+      "Choose a simple background style before editing starts.",
+    ],
+    familyReview: [
+      "Check whether faces, hands, pets, or meaningful objects are cut off.",
+      "Approve the framing style before the final render.",
+      "Review phone screenshots or social photos carefully because they may be low resolution.",
+    ],
+    privacyNotes: [
+      "Avoid using social screenshots that include comments or private profile details.",
+      "Keep original and cropped versions in restricted folders.",
+      "Ask the editor to delete working files after approval.",
+    ],
+    faq: [
+      ["Does MemorialRushAI crop the photos?", "No. It prepares crop and framing notes for the editor."],
+      ["Should portrait photos be avoided?", "No. They can work well if the editor has clear framing notes."],
+    ],
+  },
+  {
+    slug: "memorial-video-title-card-wording",
+    title: "Memorial video title card wording",
+    description:
+      "Draft title card wording for a memorial video with name, dates, relationship labels, faith notes, and family approval steps.",
+    headline: "Prepare memorial video title card wording with care.",
+    audience: "families, celebrants, editors, and volunteers preparing visible opening and chapter text",
+    checklist: ["Preferred name", "Dates or years", "Relationship label", "Opening phrase"],
+    steps: ["Choose the preferred name.", "Confirm dates or years.", "Draft the opening card.", "Review every visible word with family."],
+    rushReadiness: [
+      "Keep the opening card short and readable.",
+      "Use years only if exact dates are uncertain.",
+      "Send one approved wording version to the editor.",
+    ],
+    familyReview: [
+      "Confirm spelling, honorifics, nicknames, and dates.",
+      "Ask whether faith language or a simple remembrance phrase fits best.",
+      "Check whether relationships should be listed or kept broad.",
+    ],
+    privacyNotes: [
+      "Avoid addresses, service logistics, or private details in the title card.",
+      "Keep alternate wording drafts private.",
+      "Delete draft wording after approval if the family wants a minimal record.",
+    ],
+    faq: [
+      ["Should the title card include exact dates?", "Only if the family has confirmed them. Years can be safer when exact dates are uncertain."],
+      ["Can the title card include a quote?", "Yes, if the family approves the source and wording."],
+    ],
+  },
+  {
+    slug: "funeral-service-projector-test-checklist",
+    title: "Funeral service projector test checklist",
+    description:
+      "Prepare a funeral service projector test checklist for aspect ratio, brightness, audio, captions, file format, backup device, and operator notes.",
+    headline: "Test the projector setup before the memorial slideshow plays.",
+    audience: "church media teams, funeral homes, family volunteers, and service coordinators handling venue playback",
+    checklist: ["Aspect ratio", "Audio level", "Caption readability", "Backup device"],
+    steps: ["Bring the final video file.", "Test it on the projector.", "Check sound and readability.", "Confirm backup playback steps."],
+    rushReadiness: [
+      "Test the actual projector or TV instead of only checking on a laptop.",
+      "Confirm whether the venue needs MP4, USB, HDMI, AirPlay, or another path.",
+      "Keep a second copy with someone who will be present at the service.",
+    ],
+    familyReview: [
+      "Ask the family to approve the visible framing on the venue screen if time allows.",
+      "Check that captions are readable from the back of the room.",
+      "Confirm whether the slideshow starts before, during, or after a spoken segment.",
+    ],
+    privacyNotes: [
+      "Remove temporary files from venue computers after playback.",
+      "Do not leave source photos on shared equipment.",
+      "Keep the family archive copy separate from the venue playback copy.",
+    ],
+    faq: [
+      ["Does MemorialRushAI convert video files?", "No. It prepares the test checklist; format conversion should be handled separately."],
+      ["What if the projector crops the video?", "Flag the issue before the service and use a backup format or different playback setting if available."],
+    ],
+  },
+  {
+    slug: "memorial-video-file-deletion-checklist",
+    title: "Memorial video file deletion checklist",
+    description:
+      "Prepare after-delivery deletion notes for memorial video source photos, drafts, editor files, review links, and family archive copies.",
+    headline: "Close a memorial video project with clearer file deletion notes.",
+    audience: "families, editors, coordinators, and volunteers handling sensitive photos after final delivery",
+    checklist: ["Source photo folder", "Draft files", "Review links", "Final archive copy"],
+    steps: ["Confirm final delivery.", "Save the approved family copy.", "Ask for working-file deletion.", "Remove temporary access links."],
+    rushReadiness: [
+      "Do not delete source files before the family has the final approved copy.",
+      "Write down which folders and links should be removed after approval.",
+      "Keep the deletion request simple so the editor can confirm completion.",
+    ],
+    familyReview: [
+      "Confirm who keeps the family archive copy.",
+      "Ask whether a shorter social version is still needed before deletion.",
+      "Record the support contact in case the family needs another copy later.",
+    ],
+    privacyNotes: [
+      "Remove reviewer and editor access after final approval.",
+      "Avoid leaving private source photos in public or shared folders.",
+      "Keep only the copies the family intentionally wants to preserve.",
+    ],
+    faq: [
+      ["Does MemorialRushAI delete files for us?", "No. It prepares the deletion checklist and wording for the family or editor."],
+      ["Should every copy be deleted?", "No. Keep the approved family archive copy, then remove temporary working files and access links."],
+    ],
+  },
 ];
 
 function escapeHtml(value) {

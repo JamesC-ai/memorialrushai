@@ -23,6 +23,13 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /Revision checklist/);
   assert.match(html, /Private folder handoff/);
   assert.match(html, /Livestream tribute/);
+  assert.match(html, /Photo scanning/);
+  assert.match(html, /Thank-you message/);
+  assert.match(html, /Rehearsal checklist/);
+  assert.match(html, /Late photo additions/);
+  assert.match(html, /Title card wording/);
+  assert.match(html, /Projector test/);
+  assert.match(html, /File deletion/);
 });
 
 test("ships browser-local tribute generator", async () => {
@@ -91,10 +98,20 @@ test("includes policy support and SEO discovery files", async () => {
     "funeral-program-video-link-checklist",
     "memorial-video-social-sharing-checklist",
     "memorial-video-family-copy-after-service",
+    "memorial-video-photo-scanning-tips",
+    "memorial-slideshow-for-aunt",
+    "memorial-slideshow-for-uncle",
+    "memorial-video-thank-you-message",
+    "funeral-slideshow-rehearsal-checklist",
+    "memorial-video-late-photo-additions",
+    "memorial-video-portrait-landscape-mix",
+    "memorial-video-title-card-wording",
+    "funeral-service-projector-test-checklist",
+    "memorial-video-file-deletion-checklist",
   ]) {
     assert.match(sitemap, new RegExp(slug));
   }
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 54);
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 64);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
@@ -170,4 +187,22 @@ test("builds new family sharing and consent planning pages", async () => {
   assert.match(programLinkPage, /Does MemorialRushAI host the video link/i);
   assert.match(socialPage, /Does MemorialRushAI post to social media/i);
   assert.match(copyPage, /does this create USB copies/i);
+});
+
+test("builds new service-day and aftercare planning pages", async () => {
+  const scanningPage = await readFile(new URL("../dist/memorial-video-photo-scanning-tips/index.html", import.meta.url), "utf8");
+  const auntPage = await readFile(new URL("../dist/memorial-slideshow-for-aunt/index.html", import.meta.url), "utf8");
+  const rehearsalPage = await readFile(new URL("../dist/funeral-slideshow-rehearsal-checklist/index.html", import.meta.url), "utf8");
+  const latePhotoPage = await readFile(new URL("../dist/memorial-video-late-photo-additions/index.html", import.meta.url), "utf8");
+  const projectorPage = await readFile(
+    new URL("../dist/funeral-service-projector-test-checklist/index.html", import.meta.url),
+    "utf8",
+  );
+  const deletionPage = await readFile(new URL("../dist/memorial-video-file-deletion-checklist/index.html", import.meta.url), "utf8");
+  assert.match(scanningPage, /does MemorialRushAI scan or restore photos/i);
+  assert.match(auntPage, /does this replace writing a personal tribute/i);
+  assert.match(rehearsalPage, /does MemorialRushAI test the venue equipment/i);
+  assert.match(latePhotoPage, /can late photos always be added/i);
+  assert.match(projectorPage, /does MemorialRushAI convert video files/i);
+  assert.match(deletionPage, /does MemorialRushAI delete files for us/i);
 });
