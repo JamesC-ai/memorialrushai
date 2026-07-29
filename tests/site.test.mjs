@@ -118,10 +118,15 @@ test("includes policy support and SEO discovery files", async () => {
     "memorial-video-qr-code-program-note",
     "memorial-video-after-service-update-request",
     "memorial-video-family-archive-index",
+    "memorial-video-name-date-proofreading-checklist",
+    "memorial-video-accessibility-review-checklist",
+    "memorial-video-family-final-approval-checklist",
+    "memorial-video-backup-file-naming-checklist",
+    "memorial-video-anniversary-reshare-checklist",
   ]) {
     assert.match(sitemap, new RegExp(slug));
   }
-  assert.equal((sitemap.match(/<loc>/g) || []).length, 74);
+  assert.equal((sitemap.match(/<loc>/g) || []).length, 79);
   assert.match(privacy, /does not upload photos/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
@@ -230,4 +235,17 @@ test("builds expanded media handoff and family archive pages with safe boundarie
   assert.match(musicPage, /Rights and licensing should be checked separately/i);
   assert.match(sensitivePage, /planning checklist only/i);
   assert.match(archivePage, /storage stays with the family/i);
+});
+
+test("builds final review, backup, and anniversary pages with safe boundaries", async () => {
+  const proofPage = await readFile(new URL("../dist/memorial-video-name-date-proofreading-checklist/index.html", import.meta.url), "utf8");
+  const accessPage = await readFile(new URL("../dist/memorial-video-accessibility-review-checklist/index.html", import.meta.url), "utf8");
+  const approvalPage = await readFile(new URL("../dist/memorial-video-family-final-approval-checklist/index.html", import.meta.url), "utf8");
+  const backupPage = await readFile(new URL("../dist/memorial-video-backup-file-naming-checklist/index.html", import.meta.url), "utf8");
+  const resharePage = await readFile(new URL("../dist/memorial-video-anniversary-reshare-checklist/index.html", import.meta.url), "utf8");
+  assert.match(proofPage, /does not certify dates or identities/i);
+  assert.match(accessPage, /not legal or accessibility compliance advice/i);
+  assert.match(approvalPage, /not legal advice or a substitute for required permissions/i);
+  assert.match(backupPage, /storage remains with the family or editor/i);
+  assert.match(resharePage, /does not publish or message anyone/i);
 });
