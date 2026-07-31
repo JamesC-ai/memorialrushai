@@ -7,8 +7,12 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /MemorialRushAI/);
   assert.match(html, /Generate tribute brief/);
   assert.match(html, /Email order pack/);
+  assert.match(html, /namebatch\.pagecheckai\.com\/api\/checkout\?v=memorial-20260731&amp;product=memorialrushai/);
+  assert.match(html, /namebatch\.pagecheckai\.com\/api\/checkout\?v=memorial-20260731&amp;product=memorialrushexpanded/);
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/4L3HUKYKN6C8S/);
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/84K489BK7ZMLL/);
+  assert.match(html, /id="downloadStarter"[^>]*disabled/);
+  assert.match(html, /id="downloadExpanded"[^>]*disabled/);
   assert.match(html, /Privacy: use secure transfer only/);
   assert.match(html, /Photo order/);
   assert.match(html, /Online memorial/);
@@ -36,10 +40,16 @@ test("ships browser-local tribute generator", async () => {
   const script = await readFile(new URL("../dist/app.js", import.meta.url), "utf8");
   assert.match(script, /function generate/);
   assert.match(script, /MemorialRushAI rush order request/);
+  assert.match(script, /function paidHandoffText/);
+  assert.match(script, /memorialrushai-starter-editor-handoff\.txt/);
+  assert.match(script, /memorialrushai-expanded-archive-handoff\.txt/);
+  assert.match(script, /https:\/\/namebatch\.pagecheckai\.com\/api\/licenses\/verify/);
+  assert.match(script, /JSON\.stringify\(\{ code, product: config\.product \}\)/);
+  assert.doesNotMatch(script, /JSON\.stringify\(\{[^}]*personName/i);
   assert.match(script, /4L3HUKYKN6C8S/);
   assert.match(script, /84K489BK7ZMLL/);
   assert.match(script, /Delete working files after delivery and approval/);
-  assert.doesNotMatch(script, /fetch\(/);
+  assert.match(script, /does not upload photos/);
 });
 
 test("includes policy support and SEO discovery files", async () => {
@@ -128,6 +138,7 @@ test("includes policy support and SEO discovery files", async () => {
   }
   assert.equal((sitemap.match(/<loc>/g) || []).length, 79);
   assert.match(privacy, /does not upload photos/i);
+  assert.match(privacy, /Activation sends only the code and product key/i);
   assert.match(support, /MemorialRushAI support/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
   assert.match(indexNowScript, /api\.indexnow\.org\/indexnow/);

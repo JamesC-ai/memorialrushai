@@ -5,8 +5,10 @@ await mkdir("dist", { recursive: true });
 await cp("public", "dist", { recursive: true });
 
 const siteUrl = "https://memorial.pagecheckai.com";
-const starterUrl = "https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S";
-const fullReviewUrl = "https://www.paypal.com/ncp/payment/84K489BK7ZMLL";
+const starterUrl = "https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&product=memorialrushai";
+const fullReviewUrl = "https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&product=memorialrushexpanded";
+const starterFallbackUrl = "https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S";
+const fullReviewFallbackUrl = "https://www.paypal.com/ncp/payment/84K489BK7ZMLL";
 const pages = [
   {
     slug: "24-hour-memorial-video",
@@ -1994,6 +1996,8 @@ function pageHtml(page) {
         <a class="primary" href="/">Create a tribute brief</a>
         <a class="secondary" href="${starterUrl}">Start $49 order</a>
         <a class="secondary" href="${fullReviewUrl}">Full rush package</a>
+        <a class="secondary" href="${starterFallbackUrl}">Starter fallback</a>
+        <a class="secondary" href="${fullReviewFallbackUrl}">Expanded fallback</a>
       </div>
 
       <section class="seo-grid" aria-label="MemorialRushAI page details">
