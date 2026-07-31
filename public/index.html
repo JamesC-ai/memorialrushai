@@ -50,15 +50,48 @@
         <div>
           <p class="eyebrow">24-hour starter</p>
           <h2>$49 rush tribute planning pack.</h2>
-          <p>Use the free planner first, then choose the starter or expanded PayPal checkout before sending files.</p>
+          <p>Use the free planner first, then choose the starter or expanded checkout before sending files.</p>
         </div>
         <div class="offer-actions">
-          <a class="primary" id="starterPaymentLink" href="https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S">
+          <a class="primary" id="starterPaymentLink" href="https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&amp;product=memorialrushai">
             Pay $49 starter
           </a>
-          <a class="secondary" id="expandedPaymentLink" href="https://www.paypal.com/ncp/payment/84K489BK7ZMLL">
+          <a class="secondary" id="expandedPaymentLink" href="https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&amp;product=memorialrushexpanded">
             Pay $99 expanded
           </a>
+          <a class="secondary" href="https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S">Starter fallback</a>
+          <a class="secondary" href="https://www.paypal.com/ncp/payment/84K489BK7ZMLL">Expanded fallback</a>
+        </div>
+      </section>
+
+      <section class="offer-strip activation-strip" aria-label="MemorialRushAI paid handoff activation" data-payment-state="live">
+        <div>
+          <p class="eyebrow">Browser-generated paid packs</p>
+          <h2>Activate a paid handoff and download it on this device.</h2>
+          <p>
+            Starter adds a family-reviewed editor handoff. Expanded adds archive, accessibility, approval, and after-service
+            notes. Activation sends only the code and product key; names, dates, memories, and photo notes stay in this browser.
+          </p>
+        </div>
+        <div class="activation-panel">
+          <label for="starterCode">
+            Starter code
+            <input id="starterCode" type="text" autocomplete="off" placeholder="MR-XXXX-XXXX-XXXX-XXXX" />
+          </label>
+          <div class="button-row">
+            <button id="activateStarter" type="button">Activate starter</button>
+            <button id="downloadStarter" type="button" disabled>Download starter handoff</button>
+          </div>
+          <p id="starterStatus" class="activation-status" aria-live="polite">Enter a starter code to unlock the local handoff.</p>
+          <label for="expandedCode">
+            Expanded code
+            <input id="expandedCode" type="text" autocomplete="off" placeholder="MX-XXXX-XXXX-XXXX-XXXX" />
+          </label>
+          <div class="button-row">
+            <button id="activateExpanded" type="button">Activate expanded</button>
+            <button id="downloadExpanded" type="button" disabled>Download expanded handoff</button>
+          </div>
+          <p id="expandedStatus" class="activation-status" aria-live="polite">Enter an expanded code to unlock the local archive handoff.</p>
         </div>
       </section>
 
