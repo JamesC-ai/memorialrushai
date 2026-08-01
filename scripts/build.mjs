@@ -2038,6 +2038,10 @@ function pageHtml(page) {
           <h2>Editor handoff review</h2>
           <p>Before checkout, make sure the brief includes the final contact email, deadline, video length, music notes, photo count, required captions, and any do-not-use instructions. A clean handoff reduces rework during a sensitive deadline.</p>
         </article>
+        <article class="seo-card">
+          <h2>When a paid memorial handoff is worth it</h2>
+          <p>Buy the $49 starter only after the free brief has enough names, dates, photos, service timing, tone, and music notes for a careful editor handoff. Use the $99 expanded pack when the family also needs archive notes, accessibility review prompts, after-service copy, backup naming, and resharing notes. Skip payment if you need photo scanning, final video production, public posting, funeral-home contact, USB creation, file deletion, grief counseling, legal advice, music licensing advice, accessibility certification, consent advice, or guaranteed delivery, playback, approval, privacy, ranking, traffic, sales, or revenue.</p>
+        </article>
       </section>
 
       <section class="seo-grid" aria-label="Frequently asked questions">
