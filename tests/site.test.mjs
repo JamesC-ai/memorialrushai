@@ -26,6 +26,9 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/84K489BK7ZMLL/);
   assert.match(html, /id="downloadStarter"[^>]*disabled/);
   assert.match(html, /id="downloadExpanded"[^>]*disabled/);
+  assert.match(html, /After payment, enter the <strong>MR-<\/strong> activation code above/);
+  assert.match(html, /After payment, enter the <strong>MX-<\/strong> activation code above/);
+  assert.equal((html.match(/href="\/support\.html">open support<\/a>/g) || []).length, 2);
   assert.match(html, /Privacy: use secure transfer only/);
   assert.match(html, /Photo order/);
   assert.match(html, /Online memorial/);
