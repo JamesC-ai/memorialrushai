@@ -20,8 +20,8 @@ test("renders MemorialRushAI planner", async () => {
   assert.match(html, /Good fit for \$49 starter/);
   assert.match(html, /Good fit for \$99 expanded/);
   assert.match(html, /Skip payment when/);
-  assert.match(html, /namebatch\.pagecheckai\.com\/api\/checkout\?v=memorial-20260731&amp;product=memorialrushai/);
-  assert.match(html, /namebatch\.pagecheckai\.com\/api\/checkout\?v=memorial-20260731&amp;product=memorialrushexpanded/);
+  assert.match(html, /namebatch\.pagecheckai\.com\/api\/checkout\?v=memorial-20260731&amp;product=memorialrushai&amp;utm_source=memorialrushai&amp;utm_medium=owned&amp;utm_campaign=conversion&amp;utm_content=home_starter/);
+  assert.match(html, /namebatch\.pagecheckai\.com\/api\/checkout\?v=memorial-20260731&amp;product=memorialrushexpanded&amp;utm_source=memorialrushai&amp;utm_medium=owned&amp;utm_campaign=conversion&amp;utm_content=home_expanded/);
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/4L3HUKYKN6C8S/);
   assert.match(html, /https:\/\/www\.paypal\.com\/ncp\/payment\/84K489BK7ZMLL/);
   assert.match(html, /id="downloadStarter"[^>]*disabled/);
@@ -64,6 +64,7 @@ test("ships browser-local tribute generator", async () => {
   assert.doesNotMatch(script, /JSON\.stringify\(\{[^}]*personName/i);
   assert.match(script, /4L3HUKYKN6C8S/);
   assert.match(script, /84K489BK7ZMLL/);
+  assert.match(script, /utm_content=order_pack_starter/);
   assert.match(script, /Delete working files after delivery and approval/);
   assert.match(script, /does not upload photos/);
 });
@@ -156,6 +157,8 @@ test("includes policy support and SEO discovery files", async () => {
   assert.match(privacy, /does not upload photos/i);
   assert.match(privacy, /Activation sends only the code and product key/i);
   assert.match(support, /MemorialRushAI support/);
+  assert.match(support, /utm_content=support_starter/);
+  assert.match(support, /utm_content=support_expanded/);
   assert.equal(indexNowKey.trim(), "a9285ac544aea7af0311e391eb112c5d");
   assert.match(indexNowScript, /api\.indexnow\.org\/indexnow/);
 });
@@ -186,6 +189,8 @@ test("builds thick memorial SEO pages for rush and privacy searches", async () =
   assert.match(rushPage, /Privacy and consent checklist/);
   assert.match(rushPage, /Editor handoff review/);
   assert.match(rushPage, /When a paid memorial handoff is worth it/);
+  assert.match(rushPage, /utm_content=seo_24-hour-memorial-video_starter/);
+  assert.match(rushPage, /utm_content=seo_24-hour-memorial-video_expanded/);
   assert.match(rushPage, /Buy the \$49 starter only after the free brief has enough names, dates, photos/);
   assert.match(rushPage, /Use the \$99 expanded pack when the family also needs archive notes/);
   assert.match(rushPage, /Skip payment if you need photo scanning, final video production, public posting/);

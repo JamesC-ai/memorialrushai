@@ -57,8 +57,8 @@ function values() {
 }
 
 const paymentLinks = {
-  starter: "https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&product=memorialrushai",
-  expanded: "https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&product=memorialrushexpanded",
+  starter: "https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&product=memorialrushai&utm_source=memorialrushai&utm_medium=owned&utm_campaign=conversion&utm_content=order_pack_starter",
+  expanded: "https://namebatch.pagecheckai.com/api/checkout?v=memorial-20260731&product=memorialrushexpanded&utm_source=memorialrushai&utm_medium=owned&utm_campaign=conversion&utm_content=order_pack_expanded",
   starterFallback: "https://www.paypal.com/ncp/payment/4L3HUKYKN6C8S",
   expandedFallback: "https://www.paypal.com/ncp/payment/84K489BK7ZMLL",
 };

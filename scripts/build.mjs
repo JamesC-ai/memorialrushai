@@ -1971,6 +1971,15 @@ function faq(items) {
     .join("");
 }
 
+function checkoutUrlFor(baseUrl, content) {
+  const url = new URL(baseUrl);
+  url.searchParams.set("utm_source", "memorialrushai");
+  url.searchParams.set("utm_medium", "owned");
+  url.searchParams.set("utm_campaign", "conversion");
+  url.searchParams.set("utm_content", content);
+  return escapeHtml(url.toString());
+}
+
 function pageHtml(page) {
   return `<!doctype html>
 <html lang="en">
@@ -1994,8 +2003,8 @@ function pageHtml(page) {
       <p>${escapeHtml(page.description)}</p>
       <div class="button-row">
         <a class="primary" href="/">Create a tribute brief</a>
-        <a class="secondary" href="${starterUrl}">Start $49 order</a>
-        <a class="secondary" href="${fullReviewUrl}">Full rush package</a>
+        <a class="secondary" href="${checkoutUrlFor(starterUrl, `seo_${page.slug}_starter`)}">Start $49 order</a>
+        <a class="secondary" href="${checkoutUrlFor(fullReviewUrl, `seo_${page.slug}_expanded`)}">Full rush package</a>
         <a class="secondary" href="${starterFallbackUrl}">Starter fallback</a>
         <a class="secondary" href="${fullReviewFallbackUrl}">Expanded fallback</a>
       </div>
